@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Learning Atlas 学习与整理'
+  short_description: '按仓库中的学习路径接着教学，结束后将本次学习整理为可查阅的笔记和网页'
+  default_prompt: '使用 $learning-atlas 根据我的学习路径和当前进度继续教学；我说整理本次学习时再保存笔记。'

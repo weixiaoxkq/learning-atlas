@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { url } from '../lib/data';
+---
+
+<Layout title="搜索知识库">
+  <div class="page-heading">
+    <div>
+      <h1>查找内容</h1>
+      <p>查找主题、章节，以及已有学习记录的笔记正文。</p>
+    </div>
+  </div>
+  <div id="search"></div>
+  <p id="search-message" class="muted">
+    搜索索引在构建时生成；本地请先运行 npm run build，再运行 npm run preview。
+  </p>
+  <link rel="stylesheet" href={url('pagefind/pagefind-ui.css')} />
+  <script is:inline src={url('pagefind/pagefind-ui.js')}></script>
+  <script is:inline define:vars={{ base: url() }}>
+    if (window.PagefindUI) {
+      new window.PagefindUI({
+        element: '#search',
+        bundlePath: base + 'pagefind/',
+        baseUrl: base,
+        showSubResults: true,
+        translations: {
+          placeholder: '搜索知识、课程或问题…',
+          zero_results: '没有找到 [SEARCH_TERM] 的结果',
+          search_label: '搜索知识库',
+          load_more: '加载更多',
+          many_results: '找到 [COUNT] 个结果',
+          one_result: '找到 1 个结果',
+        },
+      });
+      document.getElementById('search-message').hidden = true;
+      const query = new URLSearchParams(location.search).get('q');
+      if (query) {
+        const input = document.querySelector('#search input');
+        input.value = query;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    }
+  </script>
+</Layout>

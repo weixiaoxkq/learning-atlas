@@ -1,0 +1,22 @@
+---
+import { url } from '../lib/data';
+const { module: m, course: c, progress: p } = Astro.props;
+const notes = m.topics
+  .map((id: string) => c.topics.find((t: any) => t.id === id))
+  .filter((t: any) => p.topics[t.id].status !== 'not_started');
+---
+
+<section>
+  <h3>{m.title}</h3>
+  <ul class="recorded-notes">
+    {notes.map((t: any) => (
+      <li>
+        <a href={url(`topics/${t.id}/`)}>{t.title}</a>
+      </li>
+    ))}
+  </ul>
+  {!notes.length && <p class="empty">暂无笔记</p>}
+  {m.children.map((child: any) => (
+    <Astro.self module={child} course={c} progress={p} />
+  ))}
+</section>

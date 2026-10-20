@@ -1,0 +1,39 @@
+{
+  "id": "item-c844d877",
+  "title": "日语",
+  "category": "item-3065710e",
+  "description": "随学随记，按语法、词汇、表达辨析与阅读笔记归档。不设固定学习顺序。",
+  "difficulty": "Beginner",
+  "mode": "collection",
+  "demo": false,
+  "created": "2026-10-20T14:41:38.841Z",
+  "updated": "2026-10-20T14:41:38.841Z",
+  "tags": [],
+  "modules": [
+    {
+      "id": "japanese-grammar",
+      "title": "语法",
+      "topics": [],
+      "children": []
+    },
+    {
+      "id": "japanese-vocabulary",
+      "title": "词汇",
+      "topics": [],
+      "children": []
+    },
+    {
+      "id": "japanese-usage",
+      "title": "表达辨析",
+      "topics": [],
+      "children": []
+    },
+    {
+      "id": "japanese-reading",
+      "title": "阅读笔记",
+      "topics": [],
+      "children": []
+    }
+  ],
+  "topics": []
+}

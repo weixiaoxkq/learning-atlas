@@ -1,0 +1,83 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Mindmap from '../../components/Mindmap.astro';
+import Module from '../../components/Module.astro';
+import CollectionGroup from '../../components/CollectionGroup.astro';
+import { load, url, courseMap } from '../../lib/data';
+export function getStaticPaths() {
+  return load().courses.map((c) => ({ params: { id: c.id } }));
+}
+const { courses, progress } = load(),
+  c = courses.find((c) => c.id === Astro.params.id)!,
+  p = progress[c.id],
+  current = c.topics.find((t) => t.id === p.current),
+  recorded = c.topics.filter((t) => p.topics[t.id].status !== 'not_started');
+---
+
+<Layout title={c.title} courseId={c.id}>
+  <article data-pagefind-body>
+    <header class="page-heading">
+      <h1>{c.title}</h1>
+      <p>{c.description}</p>
+      {c.demo && <p class="demo-note">示例主题，学习位置与笔记均为演示数据。</p>}
+    </header>
+    {c.mode !== 'collection' && (
+      <div class="location-record">
+        {current ? (
+          <p>
+            学到这里：<a href={url(`topics/${current.id}/`)}>{current.title}</a>
+          </p>
+        ) : (
+          <p>{recorded.length ? '尚未指定当前位置。' : '还没有学习记录。'}</p>
+        )}
+        {p.lastStudied && (
+          <small>
+            最近记录 {p.lastStudied.slice(0, 10)}
+            {c.demo ? '（示例）' : ''}
+          </small>
+        )}
+      </div>
+    )}
+    <nav class="section-links" aria-label="主题内容">
+      <a href={c.mode === 'collection' ? '#contents' : '#roadmap'}>
+        {c.mode === 'collection' ? '内容目录' : '学习路径'}
+      </a>
+      <a href="#mindmap">思维导图</a>
+      <a href="#notes">已有笔记</a>
+    </nav>
+    <section id={c.mode === 'collection' ? 'contents' : 'roadmap'}>
+      <h2>{c.mode === 'collection' ? '内容目录' : '学习路径'}</h2>
+      <p class="section-description">
+        {c.mode === 'collection'
+          ? '按问题积累笔记，随时从感兴趣的内容开始。'
+          : '按章节查看内容，“学到这里”标明当前记录位置。'}
+      </p>
+      {c.modules.map((m) =>
+        c.mode === 'collection' ? (
+          <CollectionGroup module={m} course={c} progress={p} />
+        ) : (
+          <Module module={m} course={c} progress={p} />
+        ),
+      )}
+      {!c.modules.length && <p class="empty">还没有章节。</p>}
+    </section>
+    <section id="mindmap">
+      <h2>思维导图</h2>
+      <Mindmap markdown={courseMap(c, url())} title={c.title} />
+    </section>
+    <section id="notes">
+      <h2>已有笔记</h2>
+      <ul class="recorded-notes">
+        {recorded.map((t) => (
+          <li>
+            <a href={url(`topics/${t.id}/`)}>{t.title}</a>
+            {c.mode !== 'collection' && p.current === t.id && (
+              <span class="node-label">当前记录</span>
+            )}
+          </li>
+        ))}
+      </ul>
+      {!recorded.length && <p class="empty">还没有整理的笔记。</p>}
+    </section>
+  </article>
+</Layout>

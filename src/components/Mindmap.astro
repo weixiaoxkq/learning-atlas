@@ -1,0 +1,63 @@
+---
+const { markdown, title = '知识地图' } = Astro.props;
+---
+
+<div class="mindmap-panel" data-markdown={markdown}>
+  <div class="map-toolbar">
+    <span>
+      <span class="live-dot" /> {title}
+    </span>
+    <div>
+      <button data-map-action="expand">展开全部</button>
+      <button data-map-action="collapse">收起</button>
+      <button data-map-action="fit">适应画布</button>
+    </div>
+  </div>
+  <svg class="mindmap" aria-label={title}></svg>
+  <div class="map-hint">拖动画布移动 · 滚轮缩放 · 点击圆点展开节点 · 点击文字打开笔记</div>
+  <p class="map-error" hidden>
+    导图加载失败，请刷新页面。课程路线仍可正常阅读。
+  </p>
+</div>
+<script>
+  import { Transformer } from 'markmap-lib';
+  import { Markmap } from 'markmap-view';
+  document.querySelectorAll<HTMLElement>('.mindmap-panel').forEach((panel) => {
+    try {
+      const { root } = new Transformer().transform(panel.dataset.markdown || '');
+      const mm = Markmap.create(
+        panel.querySelector<SVGSVGElement>('svg')!,
+        {
+          autoFit: true,
+          duration: 250,
+          color: () => '#74899c',
+          initialExpandLevel: 2,
+        },
+        root,
+      );
+      panel.querySelectorAll<HTMLButtonElement>('[data-map-action]').forEach((b) =>
+        b.addEventListener('click', async () => {
+          if (b.dataset.mapAction === 'fit') {
+            mm.fit();
+            return;
+          }
+          const collapse = b.dataset.mapAction === 'collapse';
+          const walk = (n: any, depth = 0) => {
+            n.payload = { ...n.payload, fold: collapse && depth > 0 ? 1 : 0 };
+            n.children?.forEach((c: any) => walk(c, depth + 1));
+          };
+          walk(root);
+          mm.setOptions({ initialExpandLevel: -1 });
+          await mm.setData(root);
+          await mm.fit();
+        }),
+      );
+      new ResizeObserver(() => mm.fit()).observe(panel);
+      document.addEventListener('atlas:tab', () => {
+        if (panel.getBoundingClientRect().width) mm.fit();
+      });
+    } catch {
+      panel.querySelector<HTMLElement>('.map-error')!.hidden = false;
+    }
+  });
+</script>

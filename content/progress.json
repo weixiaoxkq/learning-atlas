@@ -1,0 +1,108 @@
+{
+  "ai-7ad78091": {
+    "current": "ai-dense-moe",
+    "lastStudied": "2026-10-18T07:18:52.676Z",
+    "topics": {
+      "ai-tokenization": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-embedding": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-self-attention": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-mha-gqa": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-causal-rope": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-lm-head": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-prefill-decode": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-kv-cache": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-cache-position-context": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-logits-softmax": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-temperature-greedy": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-topk-topp": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-generation-randomness": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-sampling-example": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-model-architectures": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-cross-attention": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-dense-moe": {
+        "status": "learning",
+        "updated": "2026-10-18T07:18:52.676Z",
+        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+      },
+      "ai-pretraining-loss": {
+        "status": "not_started",
+        "updated": "2026-10-20T13:54:41.349Z",
+        "evidence": "历史后续预告，未读取到实际讲解"
+      },
+      "ai-training-engineering": {
+        "status": "not_started",
+        "updated": "2026-10-20T13:54:41.349Z",
+        "evidence": "历史后续预告，未读取到实际讲解"
+      }
+    }
+  },
+  "item-c844d877": {
+    "current": null,
+    "lastStudied": null,
+    "topics": {}
+  }
+}

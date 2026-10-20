@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { load, url } from '../lib/data';
+const { courses, progress } = load();
+---
+
+<Layout title="已有笔记">
+  <header class="page-heading">
+    <h1>已有笔记</h1>
+    <p>已经开始学习的内容，按主题整理。</p>
+  </header>
+  {courses.map((c) => (
+    <section>
+      <h2>
+        <a href={url(`courses/${c.id}/`)}>{c.title}</a>
+      </h2>
+      <ul class="recorded-notes">
+        {c.topics
+          .filter((t) => progress[c.id].topics[t.id].status !== 'not_started')
+          .map((t) => (
+            <li>
+              <a href={url(`topics/${t.id}/`)}>{t.title}</a>
+            </li>
+          ))}
+      </ul>
+    </section>
+  ))}
+</Layout>

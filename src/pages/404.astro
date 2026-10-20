@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { url } from '../lib/data';
+---
+
+<Layout title="页面未找到">
+  <div class="empty">
+    <h1>这个坐标还没有知识。</h1>
+    <p>页面可能已移动，试着搜索笔记或回到学习总览。</p>
+    <a class="button primary" href={url()}>
+      回到学习总览
+    </a>
+  </div>
+</Layout>

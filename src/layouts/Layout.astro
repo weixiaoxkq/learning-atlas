@@ -1,0 +1,97 @@
+---
+import '../styles/global.css';
+import { load, url } from '../lib/data';
+import Contents from '../components/Contents.astro';
+const { title = '学习主题', courseId, topicId } = Astro.props;
+const { courses, progress } = load();
+const course = courses.find((c) => c.id === courseId);
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="按主题整理的学习笔记、学习路径与思维导图。" />
+    <link rel="icon" href={url('favicon.svg')} />
+    <title>{title} · Learning Atlas</title>
+    <script is:inline>
+      try {
+        if (localStorage.getItem('atlas-theme') === 'dark')
+          document.documentElement.dataset.theme = 'dark';
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-pagefind-ignore>
+      <a class="brand" href={url()}>
+        Learning Atlas
+      </a>
+      <nav aria-label="主导航">
+        <a href={url()}>学习主题</a>
+        <a href={url('search/')}>搜索</a>
+        <button id="theme-toggle" aria-label="切换浅色或深色模式">
+          浅 / 深
+        </button>
+      </nav>
+    </header>
+    <div class="shell">
+      <aside class="sidebar" data-pagefind-ignore>
+        <details class="sidebar-topics" open>
+          <summary>学习主题</summary>
+          <nav aria-label="主题目录">
+            {courses.map((c) => (
+              <a
+                class:list={['subject-link', { selected: c.id === courseId }]}
+                href={url(`courses/${c.id}/`)}
+              >
+                {c.title}
+              </a>
+            ))}
+          </nav>
+        </details>
+        {course && (
+          <div class="chapter-nav">
+            <a
+              href={url(
+                `courses/${course.id}/#${course.mode === 'collection' ? 'contents' : 'roadmap'}`,
+              )}
+            >
+              {course.mode === 'collection' ? '分类目录' : '章节目录'}
+            </a>
+            {course.modules.map((m) => (
+              <Contents
+                module={m}
+                course={course}
+                progress={progress[course.id]}
+                selected={topicId}
+              />
+            ))}
+          </div>
+        )}
+      </aside>
+      <main>
+        <slot />
+      </main>
+    </div>
+    <footer data-pagefind-ignore>
+      <span>Learning Atlas</span>
+      <a href={url('guide/')}>使用说明</a>
+    </footer>
+    <script>
+      document.querySelector('#theme-toggle')?.addEventListener('click', () => {
+        const dark = document.documentElement.dataset.theme !== 'dark';
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        try {
+          localStorage.setItem('atlas-theme', dark ? 'dark' : 'light');
+        } catch {}
+      });
+      document.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          location.href = `${import.meta.env.BASE_URL}search/`;
+        }
+      });
+    </script>
+  </body>
+</html>

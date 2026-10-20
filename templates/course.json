@@ -1,0 +1,13 @@
+{
+  "id": "stable-course-id",
+  "title": "课程名称",
+  "category": "existing-category-id",
+  "description": "学习目标与范围",
+  "difficulty": "Beginner",
+  "demo": false,
+  "created": "2026-10-20T00:00:00.000Z",
+  "updated": "2026-10-20T00:00:00.000Z",
+  "tags": [],
+  "modules": [],
+  "topics": []
+}

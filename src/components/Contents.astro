@@ -1,0 +1,29 @@
+---
+import { url } from '../lib/data';
+const { module: m, course: c, progress: p, selected } = Astro.props;
+---
+
+<details class="contents-group" open>
+  <summary>{m.title}</summary>
+  <ul>
+    {m.topics.map((id: string) => (
+      <li>
+        <a
+          class:list={[
+            { selected: selected === id, unrecorded: p.topics[id].status === 'not_started' },
+          ]}
+          href={url(`topics/${id}/`)}
+          aria-current={selected === id ? 'page' : undefined}
+        >
+          {c.topics.find((t: any) => t.id === id)?.title}
+          {c.mode !== 'collection' && p.current === id && (
+            <span class="current-dot" title="当前记录位置" />
+          )}
+        </a>
+      </li>
+    ))}
+  </ul>
+  {m.children.map((child: any) => (
+    <Astro.self module={child} course={c} progress={p} selected={selected} />
+  ))}
+</details>

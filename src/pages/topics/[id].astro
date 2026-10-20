@@ -1,0 +1,89 @@
+---
+import fs from 'node:fs';
+import Layout from '../../layouts/Layout.astro';
+import { load, url, flattenModules } from '../../lib/data';
+import { renderMarkdown } from '../../lib/markdown';
+import 'katex/dist/katex.min.css';
+export function getStaticPaths() {
+  return load().courses.flatMap((c) => c.topics.map((t) => ({ params: { id: t.id } })));
+}
+const { courses, progress } = load(),
+  c = courses.find((c) => c.topics.some((t) => t.id === Astro.params.id))!,
+  t = c.topics.find((t) => t.id === Astro.params.id)!,
+  p = progress[c.id],
+  index = c.topics.indexOf(t),
+  m = flattenModules(c.modules).find((m) => m.topics.includes(t.id));
+const html = await renderMarkdown(fs.readFileSync(`content/notes/${t.id}.md`, 'utf8'), url());
+const related = [...new Set([...t.prerequisites, ...t.related])].map((id) =>
+  courses.flatMap((c) => c.topics).find((t) => t.id === id)!,
+);
+---
+
+<Layout title={t.title} courseId={c.id} topicId={t.id}>
+  <div class="note-layout">
+    <article data-pagefind-body={p.topics[t.id].status !== 'not_started' ? true : undefined}>
+      <a
+        class="back-link"
+        href={url(`courses/${c.id}/#${c.mode === 'collection' ? 'contents' : 'roadmap'}`)}
+      >
+        ‹ {c.title} / {m?.title}
+      </a>
+      <div class="note-meta">
+        <span>
+          {c.mode === 'collection'
+            ? p.topics[t.id].status === 'not_started'
+              ? '尚未整理'
+              : '已有笔记'
+            : p.current === t.id
+              ? '当前记录位置'
+              : p.topics[t.id].status === 'not_started'
+                ? '尚未学习的提纲'
+                : '已有学习记录'}
+        </span>
+        <span>更新于 {t.updated.slice(0, 10)}</span>
+        {c.demo && <span class="badge">Demo 演示笔记</span>}
+        <span data-pagefind-meta="tags">{t.tags.map((tag) => `#${tag}`).join(' ')}</span>
+      </div>
+      <div class="prose" set:html={html} />
+      {related.length > 0 && (
+        <section class="related">
+          <h2>关联知识</h2>
+          {related.map((r) => (
+            <a href={url(`topics/${r.id}/`)}>{r.title}</a>
+          ))}
+        </section>
+      )}
+      {c.mode !== 'collection' && (
+        <div class="note-navigation">
+          {index > 0 ? (
+            <a href={url(`topics/${c.topics[index - 1].id}/`)}>
+              <small>上一个知识点</small>
+              {c.topics[index - 1].title}
+            </a>
+          ) : (
+            <span />
+          )}
+          {index < c.topics.length - 1 && (
+            <a href={url(`topics/${c.topics[index + 1].id}/`)}>
+              <small>下一个知识点</small>
+              {c.topics[index + 1].title} ›
+            </a>
+          )}
+        </div>
+      )}
+    </article>
+  </div>
+</Layout>
+<script>
+  import mermaid from 'mermaid';
+  mermaid.initialize({
+    startOnLoad: false,
+    securityLevel: 'strict',
+    theme: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default',
+  });
+  mermaid.run({ querySelector: '.mermaid' }).catch(() => {
+    document
+      .querySelectorAll('.mermaid')
+      .forEach((el) => el.setAttribute('aria-label', 'Mermaid 图表源代码'));
+  });
+</script>

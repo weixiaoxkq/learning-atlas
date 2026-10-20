@@ -1,0 +1,66 @@
+---
+import { load, url } from '../lib/data';
+const { courses, categories, progress } = load();
+---
+
+<header class="page-heading">
+  <h1>学习主题</h1>
+  <p>按主题浏览内容目录、思维导图和已经整理的笔记。</p>
+</header>
+<form class="search-link" action={url('search/')}>
+  <label for="topic-search">查找章节或内容</label>
+  <div>
+    <input id="topic-search" name="q" type="search" placeholder="输入关键词…" />
+    <button type="submit">搜索</button>
+  </div>
+</form>
+{categories.map((cat) => {
+  const items = courses.filter((c) => c.category === cat.id);
+  return (
+    items.length > 0 && (
+      <section class="subject-group">
+        <h2>{cat.title}</h2>
+        <ul class="subject-list">
+          {items.map((c) => {
+            const p = progress[c.id],
+              current = c.topics.find((t) => t.id === p.current),
+              recorded = c.topics.filter((t) => p.topics[t.id].status !== 'not_started');
+            return (
+              <li>
+                <h3>
+                  <a href={url(`courses/${c.id}/`)}>{c.title}</a>
+                  {c.demo && <span class="demo-label">示例</span>}
+                </h3>
+                <p>{c.description}</p>
+                <div class="subject-meta">
+                  {c.mode === 'collection' ? (
+                    <span>{recorded.length} 篇笔记 · 随学随记</span>
+                  ) : current ? (
+                    <span>
+                      记录到：<a href={url(`topics/${current.id}/`)}>{current.title}</a>
+                    </span>
+                  ) : (
+                    <span>{recorded.length ? '暂无当前位置' : '暂无学习记录'}</span>
+                  )}
+                  <a
+                    href={url(
+                      `courses/${c.id}/#${c.mode === 'collection' ? 'contents' : 'roadmap'}`,
+                    )}
+                  >
+                    {c.mode === 'collection' ? '内容目录' : '学习路径'}
+                  </a>
+                  <a href={url(`courses/${c.id}/#mindmap`)}>思维导图</a>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )
+  );
+})}
+{courses.some((c) => c.demo) && (
+  <p class="demo-note">标有“示例”的主题和学习位置仅用于演示，不代表你的真实学习记录。</p>
+)}
+
+{!courses.length && <p class="empty">还没有学习主题。</p>}
