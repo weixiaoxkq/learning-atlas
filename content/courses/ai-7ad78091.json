@@ -4,33 +4,51 @@
   "category": "item-5a612424",
   "description": "从已有 AI 学习聊天整理：文本表示、注意力、推理与 KV Cache、采样、模型架构。记录到第 06 节 MoE；预训练仅保留未学习提纲。",
   "difficulty": "Beginner",
+  "mode": "path",
   "demo": false,
   "created": "2026-10-20T13:51:27.219Z",
-  "updated": "2026-10-20T13:54:41.349Z",
-  "tags": ["AI", "LLM", "Transformer"],
+  "updated": "2026-10-25T04:11:52.543Z",
+  "tags": [
+    "AI",
+    "LLM",
+    "Transformer"
+  ],
   "modules": [
     {
       "id": "ai-module-1",
       "title": "文本与表示",
-      "topics": ["ai-tokenization", "ai-embedding"],
+      "topics": [
+        "ai-tokenization",
+        "ai-embedding"
+      ],
       "children": []
     },
     {
       "id": "ai-module-2",
       "title": "注意力机制",
-      "topics": ["ai-self-attention", "ai-mha-gqa", "ai-causal-rope"],
+      "topics": [
+        "ai-self-attention",
+        "ai-mha-gqa",
+        "ai-causal-rope"
+      ],
       "children": []
     },
     {
       "id": "ai-module-3",
       "title": "模型输出",
-      "topics": ["ai-lm-head"],
+      "topics": [
+        "ai-lm-head"
+      ],
       "children": []
     },
     {
       "id": "ai-module-4",
       "title": "推理与 KV Cache",
-      "topics": ["ai-prefill-decode", "ai-kv-cache", "ai-cache-position-context"],
+      "topics": [
+        "ai-prefill-decode",
+        "ai-kv-cache",
+        "ai-cache-position-context"
+      ],
       "children": []
     },
     {
@@ -48,13 +66,20 @@
     {
       "id": "ai-module-6",
       "title": "模型架构与 MoE",
-      "topics": ["ai-model-architectures", "ai-cross-attention", "ai-dense-moe"],
+      "topics": [
+        "ai-model-architectures",
+        "ai-cross-attention",
+        "ai-dense-moe"
+      ],
       "children": []
     },
     {
       "id": "ai-module-7",
       "title": "后续：预训练（未学习）",
-      "topics": ["ai-pretraining-loss", "ai-training-engineering"],
+      "topics": [
+        "ai-pretraining-loss",
+        "ai-training-engineering"
+      ],
       "children": []
     }
   ],
@@ -66,169 +91,288 @@
       "updated": "2026-10-20T13:54:41.349Z",
       "prerequisites": [],
       "related": [],
-      "tags": ["AI", "LLM", "文本与表示"]
+      "tags": [
+        "AI",
+        "LLM",
+        "文本与表示"
+      ]
     },
     {
       "id": "ai-embedding",
       "title": "Embedding 与上下文表示",
       "minutes": 25,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-tokenization"],
+      "prerequisites": [
+        "ai-tokenization"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "文本与表示"]
+      "tags": [
+        "AI",
+        "LLM",
+        "文本与表示"
+      ]
     },
     {
       "id": "ai-self-attention",
       "title": "Q、K、V 与 Self-Attention",
       "minutes": 35,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-embedding"],
+      "prerequisites": [
+        "ai-embedding"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "注意力机制"]
+      "tags": [
+        "AI",
+        "LLM",
+        "注意力机制"
+      ]
     },
     {
       "id": "ai-mha-gqa",
       "title": "Multi-Head Attention 与 GQA",
       "minutes": 30,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-self-attention"],
+      "prerequisites": [
+        "ai-self-attention"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "注意力机制"]
+      "tags": [
+        "AI",
+        "LLM",
+        "注意力机制"
+      ]
     },
     {
       "id": "ai-causal-rope",
       "title": "Causal Mask 与 RoPE",
       "minutes": 35,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-self-attention"],
+      "prerequisites": [
+        "ai-self-attention"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "注意力机制"]
+      "tags": [
+        "AI",
+        "LLM",
+        "注意力机制"
+      ]
     },
     {
       "id": "ai-lm-head",
       "title": "Hidden State → LM Head → Logits",
       "minutes": 30,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-embedding", "ai-self-attention"],
+      "prerequisites": [
+        "ai-embedding",
+        "ai-self-attention"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "模型输出"]
+      "tags": [
+        "AI",
+        "LLM",
+        "模型输出"
+      ]
     },
     {
       "id": "ai-prefill-decode",
       "title": "Prefill 与 Decode 的执行顺序",
       "minutes": 30,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-lm-head", "ai-causal-rope"],
+      "prerequisites": [
+        "ai-lm-head",
+        "ai-causal-rope"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "推理与 KV Cache"]
+      "tags": [
+        "AI",
+        "LLM",
+        "推理与 KV Cache"
+      ]
     },
     {
       "id": "ai-kv-cache",
       "title": "逐层 KV Cache 与历史复用",
       "minutes": 35,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-prefill-decode"],
+      "prerequisites": [
+        "ai-prefill-decode"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "推理与 KV Cache"]
+      "tags": [
+        "AI",
+        "LLM",
+        "推理与 KV Cache"
+      ]
     },
     {
       "id": "ai-cache-position-context",
       "title": "KV 的位置编码、上下文与 Hidden State",
       "minutes": 30,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-kv-cache", "ai-causal-rope"],
+      "prerequisites": [
+        "ai-kv-cache",
+        "ai-causal-rope"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "推理与 KV Cache"]
+      "tags": [
+        "AI",
+        "LLM",
+        "推理与 KV Cache"
+      ]
     },
     {
       "id": "ai-logits-softmax",
       "title": "Logits 与 Softmax",
       "minutes": 25,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-lm-head"],
+      "prerequisites": [
+        "ai-lm-head"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "输出控制与采样"]
+      "tags": [
+        "AI",
+        "LLM",
+        "输出控制与采样"
+      ]
     },
     {
       "id": "ai-temperature-greedy",
       "title": "Temperature、Greedy 与随机采样",
       "minutes": 30,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-logits-softmax"],
+      "prerequisites": [
+        "ai-logits-softmax"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "输出控制与采样"]
+      "tags": [
+        "AI",
+        "LLM",
+        "输出控制与采样"
+      ]
     },
     {
       "id": "ai-topk-topp",
       "title": "Top-K 与 Top-P 的候选筛选",
       "minutes": 30,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-temperature-greedy"],
+      "prerequisites": [
+        "ai-temperature-greedy"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "输出控制与采样"]
+      "tags": [
+        "AI",
+        "LLM",
+        "输出控制与采样"
+      ]
     },
     {
       "id": "ai-generation-randomness",
       "title": "生成随机性、序列分叉与停止条件",
       "minutes": 25,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-topk-topp", "ai-kv-cache"],
+      "prerequisites": [
+        "ai-topk-topp",
+        "ai-kv-cache"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "输出控制与采样"]
+      "tags": [
+        "AI",
+        "LLM",
+        "输出控制与采样"
+      ]
     },
     {
       "id": "ai-sampling-example",
       "title": "采样流程的最小 Python 示例",
       "minutes": 30,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-topk-topp"],
+      "prerequisites": [
+        "ai-topk-topp"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "输出控制与采样"]
+      "tags": [
+        "AI",
+        "LLM",
+        "输出控制与采样"
+      ]
     },
     {
       "id": "ai-model-architectures",
       "title": "Encoder、Decoder 与 Encoder-Decoder",
       "minutes": 35,
-      "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-causal-rope", "ai-generation-randomness"],
+      "updated": "2026-10-25T04:11:52.543Z",
+      "prerequisites": [
+        "ai-causal-rope",
+        "ai-generation-randomness"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "模型架构与 MoE"]
+      "tags": [
+        "AI",
+        "LLM",
+        "模型架构与 MoE"
+      ]
     },
     {
       "id": "ai-cross-attention",
       "title": "Cross-Attention 的来源与尺寸",
       "minutes": 30,
-      "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-model-architectures", "ai-self-attention"],
+      "updated": "2026-10-25T04:11:52.543Z",
+      "prerequisites": [
+        "ai-model-architectures",
+        "ai-self-attention"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "模型架构与 MoE"]
+      "tags": [
+        "AI",
+        "LLM",
+        "模型架构与 MoE"
+      ]
     },
     {
       "id": "ai-dense-moe",
       "title": "Dense、MoE、Router 与激活参数",
       "minutes": 40,
-      "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-model-architectures", "ai-mha-gqa"],
+      "updated": "2026-10-25T04:11:52.543Z",
+      "prerequisites": [
+        "ai-model-architectures",
+        "ai-mha-gqa"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "模型架构与 MoE"]
+      "tags": [
+        "AI",
+        "LLM",
+        "模型架构与 MoE"
+      ]
     },
     {
       "id": "ai-pretraining-loss",
       "title": "预训练、Next Token Loss 与 Teacher Forcing",
       "minutes": 40,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-dense-moe"],
+      "prerequisites": [
+        "ai-dense-moe"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "后续：预训练"]
+      "tags": [
+        "AI",
+        "LLM",
+        "后续：预训练"
+      ]
     },
     {
       "id": "ai-training-engineering",
       "title": "Batch、Packing、精度与训练状态",
       "minutes": 40,
       "updated": "2026-10-20T13:54:41.349Z",
-      "prerequisites": ["ai-pretraining-loss"],
+      "prerequisites": [
+        "ai-pretraining-loss"
+      ],
       "related": [],
-      "tags": ["AI", "LLM", "后续：预训练"]
+      "tags": [
+        "AI",
+        "LLM",
+        "后续：预训练"
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "ai-7ad78091": {
-    "current": "ai-dense-moe",
-    "lastStudied": "2026-10-18T07:18:52.676Z",
+    "current": "ai-cross-attention",
+    "lastStudied": "2026-10-24T09:02:06.362Z",
     "topics": {
       "ai-tokenization": {
         "status": "learning",
@@ -74,19 +74,16 @@
         "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
       },
       "ai-model-architectures": {
-        "status": "learning",
-        "updated": "2026-10-18T07:18:52.676Z",
-        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+        "status": "reviewing",
+        "updated": "2026-10-24T09:02:06.362Z"
       },
       "ai-cross-attention": {
-        "status": "learning",
-        "updated": "2026-10-18T07:18:52.676Z",
-        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+        "status": "reviewing",
+        "updated": "2026-10-24T09:02:06.362Z"
       },
       "ai-dense-moe": {
         "status": "learning",
-        "updated": "2026-10-18T07:18:52.676Z",
-        "evidence": "从 AI学习路线梳理 导入：有讲解或课程回顾记录；不据助手的掌握判断自动设置 completed"
+        "updated": "2026-10-24T09:02:06.362Z"
       },
       "ai-pretraining-loss": {
         "status": "not_started",
