@@ -98,8 +98,37 @@
     }
   },
   "item-c844d877": {
-    "current": null,
-    "lastStudied": null,
-    "topics": {}
+    "current": "item-85e86434",
+    "lastStudied": "2026-10-26T16:17:51.160Z",
+    "topics": {
+      "item-8b01169a": {
+        "status": "learning",
+        "updated": "2026-10-20T15:11:43.663Z"
+      },
+      "item-803fb196": {
+        "status": "learning",
+        "updated": "2026-10-21T15:28:54.388Z"
+      },
+      "item-3db952b2": {
+        "status": "learning",
+        "updated": "2026-10-25T08:07:56.819Z"
+      },
+      "item-70d8273b": {
+        "status": "learning",
+        "updated": "2026-10-26T16:02:52.284Z"
+      },
+      "item-54066b1d": {
+        "status": "learning",
+        "updated": "2026-10-26T16:02:52.284Z"
+      },
+      "item-fbddbf7a": {
+        "status": "learning",
+        "updated": "2026-10-26T16:17:51.160Z"
+      },
+      "item-85e86434": {
+        "status": "learning",
+        "updated": "2026-10-26T16:17:51.160Z"
+      }
+    }
   }
 }

@@ -7,13 +7,19 @@
   "mode": "collection",
   "demo": false,
   "created": "2026-10-20T14:41:38.841Z",
-  "updated": "2026-10-20T14:41:38.841Z",
+  "updated": "2026-10-26T16:21:17.200Z",
   "tags": [],
   "modules": [
     {
       "id": "japanese-grammar",
       "title": "语法",
-      "topics": [],
+      "topics": [
+        "item-803fb196",
+        "item-3db952b2",
+        "item-70d8273b",
+        "item-54066b1d",
+        "item-85e86434"
+      ],
       "children": []
     },
     {
@@ -25,7 +31,10 @@
     {
       "id": "japanese-usage",
       "title": "表达辨析",
-      "topics": [],
+      "topics": [
+        "item-8b01169a",
+        "item-fbddbf7a"
+      ],
       "children": []
     },
     {
@@ -35,5 +44,69 @@
       "children": []
     }
   ],
-  "topics": []
+  "topics": [
+    {
+      "id": "item-803fb196",
+      "title": "しなくて、しないで 与 せずに 的区别",
+      "minutes": 30,
+      "updated": "2026-10-24T05:33:13.231Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-3db952b2",
+      "title": "〜もなければ〜もない：既不……也不……",
+      "minutes": 30,
+      "updated": "2026-10-25T08:18:14.601Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-70d8273b",
+      "title": "ってなったら：如果真要……／到了……的时候",
+      "minutes": 30,
+      "updated": "2026-10-26T16:03:50.944Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-54066b1d",
+      "title": "つつある：变化正在推进的语感",
+      "minutes": 30,
+      "updated": "2026-10-26T16:03:50.944Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-85e86434",
+      "title": "动词连用形中顿与て形：断句和衔接",
+      "minutes": 30,
+      "updated": "2026-10-26T16:21:17.200Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-8b01169a",
+      "title": "どういう 与 どんな 的语感差别",
+      "minutes": 30,
+      "updated": "2026-10-21T15:00:12.213Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-fbddbf7a",
+      "title": "ごとに 与 により：单位划分与条件差异",
+      "minutes": 30,
+      "updated": "2026-10-26T16:21:17.200Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    }
+  ]
 }
