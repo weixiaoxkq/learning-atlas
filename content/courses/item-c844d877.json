@@ -7,7 +7,7 @@
   "mode": "collection",
   "demo": false,
   "created": "2026-10-20T14:41:38.841Z",
-  "updated": "2026-10-26T16:21:17.200Z",
+  "updated": "2026-11-12T00:55:09.961Z",
   "tags": [],
   "modules": [
     {
@@ -18,14 +18,23 @@
         "item-3db952b2",
         "item-70d8273b",
         "item-54066b1d",
-        "item-85e86434"
+        "item-85e86434",
+        "item-bb5dd599",
+        "item-765dccca",
+        "item-59c20ad8",
+        "item-dbfb1a55",
+        "item-38f6d1b5"
       ],
       "children": []
     },
     {
       "id": "japanese-vocabulary",
       "title": "词汇",
-      "topics": [],
+      "topics": [
+        "item-59f6370b",
+        "item-4d2e2446",
+        "item-7ebb9c20"
+      ],
       "children": []
     },
     {
@@ -33,7 +42,14 @@
       "title": "表达辨析",
       "topics": [
         "item-8b01169a",
-        "item-fbddbf7a"
+        "item-fbddbf7a",
+        "item-f20ae473",
+        "item-81551e9a",
+        "item-f4cc8669",
+        "item-f51c134a",
+        "item-fecb3dcf",
+        "item-7e906eb4",
+        "item-131ed937"
       ],
       "children": []
     },
@@ -91,6 +107,78 @@
       "tags": []
     },
     {
+      "id": "item-bb5dd599",
+      "title": "ざっくりとした：副词性表达如何修饰名词",
+      "minutes": 30,
+      "updated": "2026-10-26T16:45:06.591Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-765dccca",
+      "title": "〜てて：〜ていて的口语省略与くれてて",
+      "minutes": 30,
+      "updated": "2026-11-08T16:58:42.889Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-59c20ad8",
+      "title": "前向きでいようとする：いる的意向形与ようとする",
+      "minutes": 30,
+      "updated": "2026-11-12T00:55:09.961Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-dbfb1a55",
+      "title": "かのように：仿佛……一样",
+      "minutes": 30,
+      "updated": "2026-11-12T00:55:09.961Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-38f6d1b5",
+      "title": "ところにいる：省略主语与抽象位置",
+      "minutes": 30,
+      "updated": "2026-11-12T00:55:09.961Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-59f6370b",
+      "title": "端：はし、はた与へた的读法",
+      "minutes": 30,
+      "updated": "2026-11-03T15:24:05.210Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-4d2e2446",
+      "title": "国：くに、こく与ごく的读法",
+      "minutes": 30,
+      "updated": "2026-11-12T00:55:09.961Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-7ebb9c20",
+      "title": "日语读音标注：假名、罗马字与声调数字",
+      "minutes": 30,
+      "updated": "2026-11-12T00:55:09.961Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
       "id": "item-8b01169a",
       "title": "どういう 与 どんな 的语感差别",
       "minutes": 30,
@@ -104,6 +192,69 @@
       "title": "ごとに 与 により：单位划分与条件差异",
       "minutes": 30,
       "updated": "2026-10-26T16:21:17.200Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-f20ae473",
+      "title": "無性に 与 すごく：冲动与程度的语感",
+      "minutes": 30,
+      "updated": "2026-11-03T15:24:05.210Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-81551e9a",
+      "title": "開ける・開く：あける／あく／ひらく的区别",
+      "minutes": 30,
+      "updated": "2026-11-04T13:22:04.713Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-f4cc8669",
+      "title": "といったところ 与 というところ 的区别",
+      "minutes": 30,
+      "updated": "2026-11-08T16:58:42.889Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-f51c134a",
+      "title": "当たる 与 当てる：命中与使其命中",
+      "minutes": 30,
+      "updated": "2026-11-08T16:58:42.889Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-fecb3dcf",
+      "title": "色々と 与 色々な：修饰动作与名词",
+      "minutes": 30,
+      "updated": "2026-11-08T16:58:42.889Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-7e906eb4",
+      "title": "先延ばし 与 後回し：推迟时间与调整顺序",
+      "minutes": 30,
+      "updated": "2026-11-12T00:55:09.961Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-131ed937",
+      "title": "大きめの与大きい：偏大与大的区别",
+      "minutes": 30,
+      "updated": "2026-11-12T00:55:09.961Z",
       "prerequisites": [],
       "related": [],
       "tags": []
