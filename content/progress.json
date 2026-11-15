@@ -1,7 +1,7 @@
 {
   "ai-7ad78091": {
-    "current": "ai-cross-attention",
-    "lastStudied": "2026-10-24T09:02:06.362Z",
+    "current": "ai-training-engineering",
+    "lastStudied": "2026-11-15T14:16:08.383Z",
     "topics": {
       "ai-tokenization": {
         "status": "learning",
@@ -75,31 +75,29 @@
       },
       "ai-model-architectures": {
         "status": "reviewing",
-        "updated": "2026-10-24T09:02:06.362Z"
+        "updated": "2026-11-15T14:16:08.383Z"
       },
       "ai-cross-attention": {
         "status": "reviewing",
-        "updated": "2026-10-24T09:02:06.362Z"
+        "updated": "2026-11-15T14:16:08.383Z"
       },
       "ai-dense-moe": {
-        "status": "learning",
-        "updated": "2026-10-24T09:02:06.362Z"
+        "status": "reviewing",
+        "updated": "2026-11-15T14:16:08.383Z"
       },
       "ai-pretraining-loss": {
-        "status": "not_started",
-        "updated": "2026-10-20T13:54:41.349Z",
-        "evidence": "历史后续预告，未读取到实际讲解"
+        "status": "learning",
+        "updated": "2026-11-15T14:16:08.383Z"
       },
       "ai-training-engineering": {
-        "status": "not_started",
-        "updated": "2026-10-20T13:54:41.349Z",
-        "evidence": "历史后续预告，未读取到实际讲解"
+        "status": "learning",
+        "updated": "2026-11-15T14:16:08.383Z"
       }
     }
   },
   "item-c844d877": {
-    "current": "item-38f6d1b5",
-    "lastStudied": "2026-11-10T14:53:22.051Z",
+    "current": "item-e66e046c",
+    "lastStudied": "2026-11-14T15:02:01.214Z",
     "topics": {
       "item-8b01169a": {
         "status": "learning",
@@ -188,6 +186,22 @@
       "item-38f6d1b5": {
         "status": "learning",
         "updated": "2026-11-10T14:53:22.051Z"
+      },
+      "item-8543033c": {
+        "status": "learning",
+        "updated": "2026-11-14T08:28:50.931Z"
+      },
+      "item-b26e2a6a": {
+        "status": "learning",
+        "updated": "2026-11-14T14:38:32.253Z"
+      },
+      "item-d0046ec9": {
+        "status": "learning",
+        "updated": "2026-11-14T14:38:32.253Z"
+      },
+      "item-e66e046c": {
+        "status": "learning",
+        "updated": "2026-11-14T15:02:01.214Z"
       }
     }
   }

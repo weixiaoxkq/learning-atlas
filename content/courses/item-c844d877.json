@@ -7,7 +7,7 @@
   "mode": "collection",
   "demo": false,
   "created": "2026-10-20T14:41:38.841Z",
-  "updated": "2026-11-12T00:55:09.961Z",
+  "updated": "2026-11-14T15:24:47.055Z",
   "tags": [],
   "modules": [
     {
@@ -23,7 +23,9 @@
         "item-765dccca",
         "item-59c20ad8",
         "item-dbfb1a55",
-        "item-38f6d1b5"
+        "item-38f6d1b5",
+        "item-b26e2a6a",
+        "item-d0046ec9"
       ],
       "children": []
     },
@@ -49,7 +51,9 @@
         "item-f51c134a",
         "item-fecb3dcf",
         "item-7e906eb4",
-        "item-131ed937"
+        "item-131ed937",
+        "item-8543033c",
+        "item-e66e046c"
       ],
       "children": []
     },
@@ -147,6 +151,24 @@
       "title": "ところにいる：省略主语与抽象位置",
       "minutes": 30,
       "updated": "2026-11-12T00:55:09.961Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-b26e2a6a",
+      "title": "日语动词变形总览：构成与语感",
+      "minutes": 30,
+      "updated": "2026-11-14T14:59:36.887Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-d0046ec9",
+      "title": "だ的接续：为什么有时保留、有时不用",
+      "minutes": 30,
+      "updated": "2026-11-14T14:59:36.887Z",
       "prerequisites": [],
       "related": [],
       "tags": []
@@ -255,6 +277,24 @@
       "title": "大きめの与大きい：偏大与大的区别",
       "minutes": 30,
       "updated": "2026-11-12T00:55:09.961Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-8543033c",
+      "title": "寝る与眠る：就寝、睡眠与语感区别",
+      "minutes": 30,
+      "updated": "2026-11-14T09:07:00.775Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-e66e046c",
+      "title": "のであれば与としたら：前提与假设的语感",
+      "minutes": 30,
+      "updated": "2026-11-14T15:24:47.055Z",
       "prerequisites": [],
       "related": [],
       "tags": []

@@ -1,13 +1,13 @@
 {
   "id": "ai-7ad78091",
-  "title": "AI · 大语言模型原理",
+  "title": "大语言模型原理入门",
   "category": "item-5a612424",
-  "description": "从已有 AI 学习聊天整理：文本表示、注意力、推理与 KV Cache、采样、模型架构。记录到第 06 节 MoE；预训练仅保留未学习提纲。",
+  "description": "从历史聊天与本次学习整理：文本表示、注意力、推理与 KV Cache、采样、模型架构与 MoE、预训练和训练工程。当前停在 Batch 与张量形状辨析；后训练尚未展开。",
   "difficulty": "Beginner",
   "mode": "path",
   "demo": false,
   "created": "2026-10-20T13:51:27.219Z",
-  "updated": "2026-10-25T04:11:52.543Z",
+  "updated": "2026-11-15T16:14:26.844Z",
   "tags": [
     "AI",
     "LLM",
@@ -75,7 +75,7 @@
     },
     {
       "id": "ai-module-7",
-      "title": "后续：预训练（未学习）",
+      "title": "预训练与训练工程",
       "topics": [
         "ai-pretraining-loss",
         "ai-training-engineering"
@@ -300,7 +300,7 @@
       "id": "ai-model-architectures",
       "title": "Encoder、Decoder 与 Encoder-Decoder",
       "minutes": 35,
-      "updated": "2026-10-25T04:11:52.543Z",
+      "updated": "2026-11-15T15:57:59.929Z",
       "prerequisites": [
         "ai-causal-rope",
         "ai-generation-randomness"
@@ -316,7 +316,7 @@
       "id": "ai-cross-attention",
       "title": "Cross-Attention 的来源与尺寸",
       "minutes": 30,
-      "updated": "2026-10-25T04:11:52.543Z",
+      "updated": "2026-11-15T15:57:59.929Z",
       "prerequisites": [
         "ai-model-architectures",
         "ai-self-attention"
@@ -332,7 +332,7 @@
       "id": "ai-dense-moe",
       "title": "Dense、MoE、Router 与激活参数",
       "minutes": 40,
-      "updated": "2026-10-25T04:11:52.543Z",
+      "updated": "2026-11-15T15:57:59.929Z",
       "prerequisites": [
         "ai-model-architectures",
         "ai-mha-gqa"
@@ -348,7 +348,7 @@
       "id": "ai-pretraining-loss",
       "title": "预训练、Next Token Loss 与 Teacher Forcing",
       "minutes": 40,
-      "updated": "2026-10-20T13:54:41.349Z",
+      "updated": "2026-11-15T15:57:59.929Z",
       "prerequisites": [
         "ai-dense-moe"
       ],
@@ -356,14 +356,14 @@
       "tags": [
         "AI",
         "LLM",
-        "后续：预训练"
+        "预训练与训练工程"
       ]
     },
     {
       "id": "ai-training-engineering",
       "title": "Batch、Packing、精度与训练状态",
       "minutes": 40,
-      "updated": "2026-10-20T13:54:41.349Z",
+      "updated": "2026-11-15T15:57:59.929Z",
       "prerequisites": [
         "ai-pretraining-loss"
       ],
@@ -371,7 +371,7 @@
       "tags": [
         "AI",
         "LLM",
-        "后续：预训练"
+        "预训练与训练工程"
       ]
     }
   ]

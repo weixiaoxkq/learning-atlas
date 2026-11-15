@@ -20,16 +20,16 @@ Encoder 编码输入，Decoder 除了读取已生成目标前缀，还通过 [Cr
 
 ## 学习记录
 
-这是可读取聊天中第 06 节的内容，已讲解。没有读取到该节课后题的回答，不能记为完成。原导入记录曾停在本章最后的 [Dense 与 MoE](topic:ai-dense-moe)；本次按用户要求从章首复习，实际停止在 [Cross-Attention](topic:ai-cross-attention) 及 Padding Mask 辨析。
+这是可读取聊天中第 06 节的内容，已讲解。没有读取到该节课后题的回答，不能记为完成。原导入记录曾停在本章最后的 [Dense 与 MoE](topic:ai-dense-moe)；前次按用户要求从章首复习，曾停在 [Cross-Attention](topic:ai-cross-attention) 及 Padding Mask 辨析。本轮又从章首重讲，并继续至训练工程，见文末本轮记录。
 
 ## 来源
 
 - [AI学习路线梳理](https://chatgpt.com/c/6ad375c2-a8ac-83ee-aa53-3388867be8da)（读取到的最近 5 轮；最新讲解为第 06 节）。
 - [技术参考](https://arxiv.org/abs/1810.04805)。
 
-## 本次复习：三种结构的数据来源
+## 三种结构的数据来源
 
-以下省略残差连接、归一化和多头拆分；Embedding 包含位置信息。每个层、每个 Attention 模块都有各自训练得到的投影参数。
+以下省略残差连接、归一化、多头拆分和具体位置处理。每个层、每个 Attention 模块都有各自训练得到的投影参数。
 
 ```text
 Encoder-only：
@@ -114,6 +114,38 @@ M = [0  0  0  -∞
 
 每个 Encoder 层都有 QKᵀ 匹配打分，用于决定怎样汇总 V、更新表示。只有最终输出头才把最终表示转换成类别或词表分数。Padding mask 作用于每层内部的 Attention 打分，二者不能混淆。
 
-## 本次记录范围
+## 前次复习的记录范围
 
 本次重新复习并补充结构、输出头和 mask 解释；没有用户明确掌握确认或检查通过证据，不记为已掌握。上述内容来自本次可见对话，不将早期导入聊天重建内容冒充完整历史。
+
+## 复习中澄清的信息流
+
+Encoder-only 通常没有因果遮罩，但可以有 Padding Mask；“双向可见”指本次输入中各个有效位置可以相互读取信息。它不默认执行下一 Token 预测，具体任务取决于输出头和训练目标。BERT 的 `[MASK]` 是替换输入内容的特殊 Token，与控制注意力连接的 mask 不同。
+
+因果 Decoder-only 则使用 Causal Mask，使每个位置只能读取自身及此前的有效位置。例如“我 / 喜欢 / 苹果”中，“喜欢”的表示不能读取“苹果”，但末位置“苹果”可以读取这三个位置。
+
+标准 Encoder-Decoder 中，每个 Decoder 层的 Cross-Attention 都读取 Encoder 最后一层的整组输出，而非按层号读取对应的 Encoder 层。各 Decoder 层拥有各自的投影参数。
+
+## 表示向量与任务预测
+
+假设有 4 个输入位置、隐藏维度为 512，则 Encoder 输出是 $4\times512$ 的表示矩阵。每个位置对应一个上下文向量，尚未变成类别或词表预测；数值与维度只是教学示意。
+
+分类可以使用最终 `[CLS]` 表示接分类头；填空使用被遮位置的最终表示接词表预测头。生成时，Decoder 末位置的最终表示经过 LM Head，得到词表各 Token 的 logits，再进行概率转换与选择。Attention 权重回答“读取哪些位置的信息”，词表概率回答“预测哪个 Token”，二者不能混为一谈。
+
+## 为什么 Decoder-only 也能翻译
+
+把指令与源文本放在目标文本之前即可组织成生成任务，例如：
+
+```text
+请翻译成中文：
+I like apples
+译文：
+```
+
+后续中文位置能够通过因果 Self-Attention 读取前面的完整英文和已生成中文，但英文内部的各位置仍受因果可见性限制。Encoder-Decoder 则先对源文本双向编码，再让 Decoder 通过 Cross-Attention 使用源表示。两种结构提供不同的信息路径，具体任务能力仍需要训练获得；示例不是实测生成结果。
+
+## 本轮整理范围
+
+本轮从架构章首重新讲解并澄清上述概念，随后继续讨论 Cross-Attention、MoE、预训练及训练工程。正式停止位置为 [Batch、Packing、精度与训练状态](topic:ai-training-engineering)。未进行掌握检查或明确掌握确认，原有历史来源范围仍保留。
+
+补充参考：[T5 论文的结构比较](https://arxiv.org/html/1910.10683v4#S3.SS2.SSS1)、[BERT 文档](https://huggingface.co/docs/transformers/model_doc/bert)、[GPT-2 文档](https://huggingface.co/docs/transformers/model_doc/gpt2)。

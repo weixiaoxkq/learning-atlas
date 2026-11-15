@@ -64,6 +64,31 @@ Cross-Attention 输出仍是 Decoder 侧每位置一个向量；后续 FFN 逐�
 
 源长度为 S、目标 Query 长度为 T 时，打分矩阵为 T×S。源 PAD 所在列对所有目标 Query 行都被屏蔽。详细的补齐原因、列屏蔽示例和逐层应用见 [Encoder 与 Padding Mask](topic:ai-model-architectures)。
 
-## 本次停止位置
+## 学习位置与记录范围
 
-本次从架构章首复习后停在 Cross-Attention 及 Padding Mask 辨析，最后解释了输入为什么要补 PAD。已回答当轮问题，尚无掌握确认；原有尺寸题仍无用户作答证据。下次默认从此节点衔接，不自动进入 MoE 或预训练。
+前次从架构章首复习后曾停在 Cross-Attention 及 Padding Mask 辨析，最后解释了输入为什么要补 PAD。本轮重新讲解 Q/K/V 来源、权重和加权汇总，并继续讨论 MoE、预训练与训练工程。实际停止位置见 [训练工程](topic:ai-training-engineering)。原有尺寸题仍无用户作答证据，没有新增掌握检查或明确掌握确认。
+
+## 单头加权汇总的数值例子
+
+以英文 `I / like / apples` 和中文前缀“我”为例。对某一 Decoder 层的一个头，当前目标位置产生 Query，三个源位置各自产生 Key 和 Value。Query 与各 Key 的缩放点积经 mask 和逐行 Softmax 得到权重，再按这些权重汇总 Value。
+
+| 源位置 | 假设权重 | 假设 Value |
+| --- | ---: | --- |
+| I | 0.1 | (1, 0) |
+| like | 0.7 | (0, 2) |
+| apples | 0.2 | (3, 1) |
+
+$$
+O=0.1(1,0)+0.7(0,2)+0.2(3,1)=(0.7,1.6)
+$$
+
+这些向量和权重是教学假设，不是模型测量，也不保证逐词对齐。一个 Query 对三个源位置分配权重，权重矩阵是 $1\times3$，结果仍然是一个目标侧向量；输出位置数量由 Query 数量决定。
+
+实际多头计算会将各头结果拼接并投影。Cross-Attention 的输出还要经过该层后续计算、后续 Decoder 层，最后才由 LM Head 生成词表分数。
+
+| 模块 | Query 来源 | Key、Value 来源 |
+| --- | --- | --- |
+| Self-Attention | 当前序列表示 | 同一序列表示 |
+| Encoder-Decoder Cross-Attention | Decoder 当前表示 | Encoder 最终输出 |
+
+补充参考：[PyTorch 注意力公式与形状](https://docs.pytorch.org/docs/2.15/generated/torch.nn.functional.scaled_dot_product_attention.html)。
