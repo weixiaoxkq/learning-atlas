@@ -204,5 +204,107 @@
         "updated": "2026-11-14T15:02:01.214Z"
       }
     }
+  },
+  "ai-01306f26": {
+    "current": null,
+    "lastStudied": null,
+    "topics": {
+      "ai-7ed4bed9": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:12.115Z"
+      },
+      "prompt-context-tool-ffdbd8bf": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:12.304Z"
+      },
+      "workflow-agent-harness-1ee0f63b": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:12.511Z"
+      },
+      "item-6711f6d9": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:12.693Z"
+      },
+      "schema-1afe35e1": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:12.883Z"
+      },
+      "item-335d2f5b": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:13.079Z"
+      },
+      "item-1a3d2c00": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:13.263Z"
+      },
+      "rag-108d6208": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:13.442Z"
+      },
+      "item-7ae40312": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:13.623Z"
+      },
+      "tool-calling-0d851dd7": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:13.800Z"
+      },
+      "mcp-d7d6c934": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:13.986Z"
+      },
+      "skills-0298cba5": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:14.186Z"
+      },
+      "item-f3a41725": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:14.369Z"
+      },
+      "agent-96dafaaf": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:14.545Z"
+      },
+      "item-196ecf9a": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:14.734Z"
+      },
+      "item-14c78c4e": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:14.932Z"
+      },
+      "item-f653b3ff": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:15.112Z"
+      },
+      "harness-18062c36": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:15.519Z"
+      },
+      "evals-9878ab5d": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:15.700Z"
+      },
+      "item-92347881": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:15.887Z"
+      },
+      "item-2af8d5bf": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:16.072Z"
+      },
+      "trace-abd3a570": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:16.260Z"
+      },
+      "item-524b1b2c": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:16.494Z"
+      },
+      "item-04cb739d": {
+        "status": "not_started",
+        "updated": "2026-11-15T16:20:16.678Z"
+      }
+    }
   }
 }

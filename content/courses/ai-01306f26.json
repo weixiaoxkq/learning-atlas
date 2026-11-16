@@ -1,0 +1,554 @@
+{
+  "id": "ai-01306f26",
+  "title": "AI应用工程",
+  "category": "item-5a612424",
+  "description": "从概念地图和单次调用开始，逐步学习上下文、工具封装、工作流、自动化 Harness、品质评估与持续交付。以资料整理助手为计划贯穿案例，每节按问题、讲解顺序、小实验和验收观察组织；先定义成功标准，再逐步完善评估与恢复机制。",
+  "difficulty": "Beginner",
+  "mode": "path",
+  "demo": false,
+  "created": "2026-11-15T16:20:11.803Z",
+  "updated": "2026-11-16T00:39:10.209Z",
+  "tags": [
+    "AI",
+    "应用工程",
+    "Agent",
+    "Harness",
+    "品质控制"
+  ],
+  "modules": [
+    {
+      "id": "ai-app-foundations",
+      "title": "应用工程概念地图",
+      "topics": [
+        "ai-7ed4bed9",
+        "prompt-context-tool-ffdbd8bf",
+        "workflow-agent-harness-1ee0f63b"
+      ],
+      "children": []
+    },
+    {
+      "id": "ai-app-calls",
+      "title": "单次调用与应用契约",
+      "topics": [
+        "item-6711f6d9",
+        "schema-1afe35e1",
+        "item-335d2f5b"
+      ],
+      "children": []
+    },
+    {
+      "id": "ai-app-context",
+      "title": "上下文与知识工程",
+      "topics": [
+        "item-1a3d2c00",
+        "rag-108d6208",
+        "item-7ae40312"
+      ],
+      "children": []
+    },
+    {
+      "id": "ai-app-tools",
+      "title": "工具与能力封装",
+      "topics": [
+        "tool-calling-0d851dd7",
+        "mcp-d7d6c934",
+        "skills-0298cba5"
+      ],
+      "children": []
+    },
+    {
+      "id": "ai-app-workflows",
+      "title": "工作流与 Agent 设计",
+      "topics": [
+        "item-f3a41725",
+        "agent-96dafaaf",
+        "item-196ecf9a"
+      ],
+      "children": []
+    },
+    {
+      "id": "ai-app-automation",
+      "title": "自动化与 Harness 工程",
+      "topics": [
+        "item-14c78c4e",
+        "item-f653b3ff",
+        "harness-18062c36"
+      ],
+      "children": []
+    },
+    {
+      "id": "ai-app-quality",
+      "title": "品质控制与评估工程",
+      "topics": [
+        "evals-9878ab5d",
+        "item-92347881",
+        "item-2af8d5bf"
+      ],
+      "children": []
+    },
+    {
+      "id": "ai-app-delivery",
+      "title": "交付、观测与持续改进",
+      "topics": [
+        "trace-abd3a570",
+        "item-524b1b2c",
+        "item-04cb739d"
+      ],
+      "children": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "ai-7ed4bed9",
+      "title": "模型、模型服务与 AI 应用",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [],
+      "related": [
+        "ai-lm-head",
+        "ai-prefill-decode",
+        "item-335d2f5b",
+        "workflow-agent-harness-1ee0f63b"
+      ],
+      "tags": [
+        "AI应用工程",
+        "应用工程概念地图"
+      ]
+    },
+    {
+      "id": "prompt-context-tool-ffdbd8bf",
+      "title": "Prompt、Context、Tool 与结构化输出",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "ai-7ed4bed9"
+      ],
+      "related": [
+        "schema-1afe35e1",
+        "item-1a3d2c00",
+        "tool-calling-0d851dd7"
+      ],
+      "tags": [
+        "AI应用工程",
+        "应用工程概念地图"
+      ]
+    },
+    {
+      "id": "workflow-agent-harness-1ee0f63b",
+      "title": "Workflow、Agent、Harness 与应用边界",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "ai-7ed4bed9"
+      ],
+      "related": [
+        "item-f3a41725",
+        "agent-96dafaaf",
+        "harness-18062c36"
+      ],
+      "tags": [
+        "AI应用工程",
+        "应用工程概念地图"
+      ]
+    },
+    {
+      "id": "item-6711f6d9",
+      "title": "请求、响应、流式输出与异常",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "prompt-context-tool-ffdbd8bf"
+      ],
+      "related": [
+        "schema-1afe35e1",
+        "item-f653b3ff",
+        "trace-abd3a570"
+      ],
+      "tags": [
+        "AI应用工程",
+        "单次调用与应用契约"
+      ]
+    },
+    {
+      "id": "schema-1afe35e1",
+      "title": "Schema、结构化结果与程序校验",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-6711f6d9"
+      ],
+      "related": [
+        "tool-calling-0d851dd7",
+        "item-92347881"
+      ],
+      "tags": [
+        "AI应用工程",
+        "单次调用与应用契约"
+      ]
+    },
+    {
+      "id": "item-335d2f5b",
+      "title": "任务需求、成功标准与最小应用",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "ai-7ed4bed9",
+        "schema-1afe35e1"
+      ],
+      "related": [
+        "evals-9878ab5d",
+        "item-04cb739d"
+      ],
+      "tags": [
+        "AI应用工程",
+        "单次调用与应用契约"
+      ]
+    },
+    {
+      "id": "item-1a3d2c00",
+      "title": "指令、历史、上下文预算与压缩",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "prompt-context-tool-ffdbd8bf",
+        "item-6711f6d9"
+      ],
+      "related": [
+        "ai-cache-position-context",
+        "rag-108d6208",
+        "item-7ae40312",
+        "agent-96dafaaf"
+      ],
+      "tags": [
+        "AI应用工程",
+        "上下文与知识工程"
+      ]
+    },
+    {
+      "id": "rag-108d6208",
+      "title": "RAG、检索、引用与知识更新",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-1a3d2c00"
+      ],
+      "related": [
+        "ai-embedding",
+        "item-335d2f5b",
+        "evals-9878ab5d",
+        "item-2af8d5bf"
+      ],
+      "tags": [
+        "AI应用工程",
+        "上下文与知识工程"
+      ]
+    },
+    {
+      "id": "item-7ae40312",
+      "title": "会话状态、长期记忆与信息取舍",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-1a3d2c00"
+      ],
+      "related": [
+        "ai-kv-cache",
+        "item-14c78c4e",
+        "item-f653b3ff"
+      ],
+      "tags": [
+        "AI应用工程",
+        "上下文与知识工程"
+      ]
+    },
+    {
+      "id": "tool-calling-0d851dd7",
+      "title": "Tool Calling 的调用闭环与接口设计",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-6711f6d9",
+        "schema-1afe35e1"
+      ],
+      "related": [
+        "mcp-d7d6c934",
+        "skills-0298cba5",
+        "item-196ecf9a"
+      ],
+      "tags": [
+        "AI应用工程",
+        "工具与能力封装"
+      ]
+    },
+    {
+      "id": "mcp-d7d6c934",
+      "title": "MCP 的角色、连接与协议边界",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "tool-calling-0d851dd7"
+      ],
+      "related": [
+        "tool-calling-0d851dd7",
+        "harness-18062c36"
+      ],
+      "tags": [
+        "AI应用工程",
+        "工具与能力封装"
+      ]
+    },
+    {
+      "id": "skills-0298cba5",
+      "title": "Skills、脚本与可复用工作流程",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "tool-calling-0d851dd7"
+      ],
+      "related": [
+        "tool-calling-0d851dd7",
+        "mcp-d7d6c934",
+        "item-524b1b2c"
+      ],
+      "tags": [
+        "AI应用工程",
+        "工具与能力封装"
+      ]
+    },
+    {
+      "id": "item-f3a41725",
+      "title": "链式处理、路由、并行与状态机",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "workflow-agent-harness-1ee0f63b",
+        "tool-calling-0d851dd7"
+      ],
+      "related": [
+        "agent-96dafaaf",
+        "item-14c78c4e",
+        "item-196ecf9a"
+      ],
+      "tags": [
+        "AI应用工程",
+        "工作流与 Agent 设计"
+      ]
+    },
+    {
+      "id": "agent-96dafaaf",
+      "title": "Agent 循环、任务分解与停止条件",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-f3a41725",
+        "item-1a3d2c00"
+      ],
+      "related": [
+        "workflow-agent-harness-1ee0f63b",
+        "harness-18062c36",
+        "evals-9878ab5d"
+      ],
+      "tags": [
+        "AI应用工程",
+        "工作流与 Agent 设计"
+      ]
+    },
+    {
+      "id": "item-196ecf9a",
+      "title": "模型决策与确定性程序的职责划分",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-f3a41725",
+        "agent-96dafaaf"
+      ],
+      "related": [
+        "tool-calling-0d851dd7",
+        "harness-18062c36",
+        "item-92347881"
+      ],
+      "tags": [
+        "AI应用工程",
+        "工作流与 Agent 设计"
+      ]
+    },
+    {
+      "id": "item-14c78c4e",
+      "title": "触发器、调度、任务队列与状态持久化",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-f3a41725",
+        "item-7ae40312"
+      ],
+      "related": [
+        "item-f3a41725",
+        "item-7ae40312",
+        "item-f653b3ff"
+      ],
+      "tags": [
+        "AI应用工程",
+        "自动化与 Harness 工程"
+      ]
+    },
+    {
+      "id": "item-f653b3ff",
+      "title": "重试、超时、幂等与断点恢复",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-14c78c4e"
+      ],
+      "related": [
+        "item-14c78c4e",
+        "harness-18062c36",
+        "item-2af8d5bf"
+      ],
+      "tags": [
+        "AI应用工程",
+        "自动化与 Harness 工程"
+      ]
+    },
+    {
+      "id": "harness-18062c36",
+      "title": "Harness：执行环境、权限与运行预算",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "agent-96dafaaf",
+        "item-f653b3ff"
+      ],
+      "related": [
+        "agent-96dafaaf",
+        "item-f653b3ff",
+        "trace-abd3a570",
+        "evals-9878ab5d"
+      ],
+      "tags": [
+        "AI应用工程",
+        "自动化与 Harness 工程"
+      ]
+    },
+    {
+      "id": "evals-9878ab5d",
+      "title": "测试集、验收标准与离线 Evals",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-335d2f5b",
+        "agent-96dafaaf"
+      ],
+      "related": [
+        "item-335d2f5b",
+        "item-92347881",
+        "item-2af8d5bf",
+        "trace-abd3a570"
+      ],
+      "tags": [
+        "AI应用工程",
+        "品质控制与评估工程"
+      ]
+    },
+    {
+      "id": "item-92347881",
+      "title": "规则检查、模型评分与人工校准",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "evals-9878ab5d"
+      ],
+      "related": [
+        "schema-1afe35e1",
+        "evals-9878ab5d",
+        "item-2af8d5bf"
+      ],
+      "tags": [
+        "AI应用工程",
+        "品质控制与评估工程"
+      ]
+    },
+    {
+      "id": "item-2af8d5bf",
+      "title": "回归测试、失败分析与稳健性",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "evals-9878ab5d",
+        "item-92347881"
+      ],
+      "related": [
+        "rag-108d6208",
+        "item-f653b3ff",
+        "item-524b1b2c"
+      ],
+      "tags": [
+        "AI应用工程",
+        "品质控制与评估工程"
+      ]
+    },
+    {
+      "id": "trace-abd3a570",
+      "title": "日志、Trace、成功率、成本与延迟",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "harness-18062c36",
+        "evals-9878ab5d"
+      ],
+      "related": [
+        "item-6711f6d9",
+        "harness-18062c36",
+        "item-524b1b2c"
+      ],
+      "tags": [
+        "AI应用工程",
+        "交付、观测与持续改进"
+      ]
+    },
+    {
+      "id": "item-524b1b2c",
+      "title": "版本管理、持续集成、发布与回滚",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "item-2af8d5bf",
+        "trace-abd3a570"
+      ],
+      "related": [
+        "skills-0298cba5",
+        "item-2af8d5bf",
+        "trace-abd3a570",
+        "item-04cb739d"
+      ],
+      "tags": [
+        "AI应用工程",
+        "交付、观测与持续改进"
+      ]
+    },
+    {
+      "id": "item-04cb739d",
+      "title": "综合实践：可恢复、可评估的资料整理助手",
+      "minutes": 30,
+      "updated": "2026-11-16T00:39:10.209Z",
+      "prerequisites": [
+        "rag-108d6208",
+        "skills-0298cba5",
+        "harness-18062c36",
+        "item-2af8d5bf",
+        "item-524b1b2c"
+      ],
+      "related": [
+        "item-335d2f5b",
+        "rag-108d6208",
+        "skills-0298cba5",
+        "harness-18062c36",
+        "item-2af8d5bf",
+        "item-524b1b2c"
+      ],
+      "tags": [
+        "AI应用工程",
+        "交付、观测与持续改进"
+      ]
+    }
+  ]
+}
