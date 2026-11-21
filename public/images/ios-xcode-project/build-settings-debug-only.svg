@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="262" viewBox="0 0 680 262" role="img">
+<title>在 Xcode Build Settings 里只修改 Debug 配置</title>
+<desc>Xcode 工程编辑器示意：1 在左侧导航器选中蓝色的 AINotes 工程；2 在 Targets 下选中 AINotes；3 打开 Build Settings 标签；4 选 All 并在搜索框输入设置名；5 点设置名左边的三角展开；6 双击 Debug 那一行的值进行修改，Release 不受影响。</desc><style>svg{--t:#73726C;--b:#D3D1C7;--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}.t{font-size:14px;fill:#1F1E1D}.ts{font-size:12px;fill:#5F5E5A}.th{font-size:14px;font-weight:500;fill:#1F1E1D}.box{fill:#F5F4EF;stroke:#B4B2A9}.arr{stroke:#73726C;stroke-width:1.5;fill:none}.leader{stroke:#888780;stroke-width:0.5;stroke-dasharray:3 3;fill:none}.c-gray>rect,.c-gray>circle,.c-gray>ellipse,rect.c-gray,circle.c-gray,ellipse.c-gray{fill:#F1EFE8;stroke:#5F5E5A}.c-gray>.t,.c-gray>.th{fill:#444441}.c-gray>.ts{fill:#5F5E5A}.c-teal>rect,.c-teal>circle,.c-teal>ellipse,rect.c-teal,circle.c-teal,ellipse.c-teal{fill:#E1F5EE;stroke:#0F6E56}.c-teal>.t,.c-teal>.th{fill:#085041}.c-teal>.ts{fill:#0F6E56}.c-purple>rect,.c-purple>circle,.c-purple>ellipse,rect.c-purple,circle.c-purple,ellipse.c-purple{fill:#EEEDFE;stroke:#534AB7}.c-purple>.t,.c-purple>.th{fill:#3C3489}.c-purple>.ts{fill:#534AB7}.c-amber>rect,.c-amber>circle,.c-amber>ellipse,rect.c-amber,circle.c-amber,ellipse.c-amber{fill:#FAEEDA;stroke:#854F0B}.c-amber>.t,.c-amber>.th{fill:#633806}.c-amber>.ts{fill:#854F0B}.c-green>rect,.c-green>circle,.c-green>ellipse,rect.c-green,circle.c-green,ellipse.c-green{fill:#EAF3DE;stroke:#3B6D11}.c-green>.t,.c-green>.th{fill:#27500A}.c-green>.ts{fill:#3B6D11}.c-blue>rect,.c-blue>circle,.c-blue>ellipse,rect.c-blue,circle.c-blue,ellipse.c-blue{fill:#E6F1FB;stroke:#185FA5}.c-blue>.t,.c-blue>.th{fill:#0C447C}.c-blue>.ts{fill:#185FA5}.c-coral>rect,.c-coral>circle,.c-coral>ellipse,rect.c-coral,circle.c-coral,ellipse.c-coral{fill:#FAECE7;stroke:#993C1D}.c-coral>.t,.c-coral>.th{fill:#712B13}.c-coral>.ts{fill:#993C1D}</style><rect x="0" y="0" width="680" height="262" fill="#FFFFFF"/>
+<rect class="box" x="40" y="30" width="600" height="200" rx="8" stroke-width="0.5"/>
+<line x1="175" y1="30" x2="175" y2="230" stroke="var(--b)" stroke-width="0.5"/>
+<line x1="300" y1="30" x2="300" y2="230" stroke="var(--b)" stroke-width="0.5"/>
+<line x1="300" y1="70" x2="640" y2="70" stroke="var(--b)" stroke-width="0.5"/>
+<text class="ts" x="52" y="52" dominant-baseline="central">Project navigator</text>
+<g class="c-purple">
+<rect x="48" y="66" width="119" height="26" rx="4" stroke-width="0.5"/>
+<rect x="56" y="74" width="10" height="10" rx="2" stroke-width="0.5"/>
+<text class="th" x="74" y="79" dominant-baseline="central">AINotes</text>
+</g>
+<text class="t" x="74" y="106" dominant-baseline="central">AINotes</text>
+<text class="t" x="74" y="128" dominant-baseline="central">AINotesTests</text>
+<text class="ts" x="187" y="52" dominant-baseline="central">Project</text>
+<text class="t" x="187" y="76" dominant-baseline="central">AINotes</text>
+<text class="ts" x="187" y="100" dominant-baseline="central">Targets</text>
+<g class="c-purple">
+<rect x="181" y="110" width="113" height="26" rx="4" stroke-width="0.5"/>
+<text class="th" x="193" y="123" dominant-baseline="central">AINotes</text>
+</g>
+<text class="t" x="193" y="150" dominant-baseline="central">AINotesTests</text>
+<text class="ts" x="314" y="52" dominant-baseline="central">General</text>
+<text class="ts" x="372" y="52" dominant-baseline="central">Info</text>
+<g class="c-purple">
+<rect x="406" y="41" width="120" height="22" rx="4" stroke-width="0.5"/>
+<text class="th" x="466" y="52" text-anchor="middle" dominant-baseline="central">Build Settings</text>
+</g>
+<text class="ts" x="540" y="52" dominant-baseline="central">Build Phases</text>
+<text class="ts" x="312" y="92" dominant-baseline="central">Basic</text>
+<text class="ts" x="350" y="92" dominant-baseline="central">Customized</text>
+<rect class="box" x="420" y="82" width="34" height="20" rx="4" stroke-width="0.5"/>
+<text class="th" x="437" y="92" text-anchor="middle" dominant-baseline="central">All</text>
+<rect class="box" x="464" y="82" width="168" height="20" rx="4" stroke-width="0.5"/>
+<text class="ts" x="474" y="92" dominant-baseline="central">Active Compilation</text>
+<text class="th" x="312" y="124" dominant-baseline="central">Swift Compiler - Custom Flags</text>
+<polygon points="322,145 330,145 326,152" fill="var(--t)"/>
+<text class="t" x="336" y="150" dominant-baseline="central">Active Compilation Conditions</text>
+<g class="c-purple">
+<rect x="320" y="164" width="312" height="24" rx="4" stroke-width="0.5"/>
+<text class="th" x="338" y="176" dominant-baseline="central">Debug</text>
+<text class="ts" x="560" y="176" dominant-baseline="central">DEBUG</text>
+</g>
+<text class="t" x="338" y="204" dominant-baseline="central">Release</text>
+<text class="ts" x="560" y="204" dominant-baseline="central">（空）</text>
+<g class="c-amber"><circle cx="155" cy="66" r="9" stroke-width="0.5"/><text class="th" x="155" y="66" text-anchor="middle" dominant-baseline="central">1</text></g>
+<g class="c-amber"><circle cx="282" cy="110" r="9" stroke-width="0.5"/><text class="th" x="282" y="110" text-anchor="middle" dominant-baseline="central">2</text></g>
+<g class="c-amber"><circle cx="522" cy="41" r="9" stroke-width="0.5"/><text class="th" x="522" y="41" text-anchor="middle" dominant-baseline="central">3</text></g>
+<g class="c-amber"><circle cx="624" cy="82" r="9" stroke-width="0.5"/><text class="th" x="624" y="82" text-anchor="middle" dominant-baseline="central">4</text></g>
+<g class="c-amber"><circle cx="310" cy="150" r="9" stroke-width="0.5"/><text class="th" x="310" y="150" text-anchor="middle" dominant-baseline="central">5</text></g>
+<g class="c-amber"><circle cx="624" cy="164" r="9" stroke-width="0.5"/><text class="th" x="624" y="164" text-anchor="middle" dominant-baseline="central">6</text></g>
+<text x="672" y="254" text-anchor="end" style="font-size:11px;fill:#888780">示意图</text></svg>

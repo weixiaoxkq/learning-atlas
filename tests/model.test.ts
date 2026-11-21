@@ -94,6 +94,24 @@ test('missing Markdown and invalid internal links are rejected', () => {
     fs.rmSync(root, { recursive: true, force: true });
   }
 });
+test('note images under public/images are accepted only when the file exists', () => {
+  const root = fixture();
+  try {
+    fs.appendFileSync(
+      path.join(root, 'content/notes/rag-1.md'),
+      '\n![示意图](../../images/rag-1/flow.svg)',
+    );
+    assert.throws(() => load(root), /图片不存在/);
+    fs.mkdirSync(path.join(root, 'public/images/rag-1'), { recursive: true });
+    fs.writeFileSync(
+      path.join(root, 'public/images/rag-1/flow.svg'),
+      '<svg xmlns="http://www.w3.org/2000/svg"/>',
+    );
+    load(root);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
 test('CLI creates courses and topics, preserves progress, guards completion', () => {
   const root = fixture();
   const cli = (...args: string[]) =>

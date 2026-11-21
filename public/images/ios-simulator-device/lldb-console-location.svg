@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="384" viewBox="0 0 680 384" role="img">
+<title>LLDB 控制台在 Xcode 窗口中的位置</title>
+<desc>Xcode 窗口：上方工具栏，左侧导航器，中间代码编辑区，程序停在绿色高亮的 return parts.count 这一行；下方是调试区，左半是变量视图，右半是控制台。控制台里已有 v text 和 po text.count 的输出，最下面一行 (lldb) 是输入命令的地方，输完按回车执行。1 程序先停在断点；2 调试区用 Shift Command Y 打开；3 用 Shift Command C 进入控制台，在 (lldb) 后输入并回车。</desc><style>svg{--t:#73726C;--b:#D3D1C7;--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}.t{font-size:14px;fill:#1F1E1D}.ts{font-size:12px;fill:#5F5E5A}.th{font-size:14px;font-weight:500;fill:#1F1E1D}.box{fill:#F5F4EF;stroke:#B4B2A9}.arr{stroke:#73726C;stroke-width:1.5;fill:none}.leader{stroke:#888780;stroke-width:0.5;stroke-dasharray:3 3;fill:none}.c-gray>rect,.c-gray>circle,.c-gray>ellipse,rect.c-gray,circle.c-gray,ellipse.c-gray{fill:#F1EFE8;stroke:#5F5E5A}.c-gray>.t,.c-gray>.th{fill:#444441}.c-gray>.ts{fill:#5F5E5A}.c-teal>rect,.c-teal>circle,.c-teal>ellipse,rect.c-teal,circle.c-teal,ellipse.c-teal{fill:#E1F5EE;stroke:#0F6E56}.c-teal>.t,.c-teal>.th{fill:#085041}.c-teal>.ts{fill:#0F6E56}.c-purple>rect,.c-purple>circle,.c-purple>ellipse,rect.c-purple,circle.c-purple,ellipse.c-purple{fill:#EEEDFE;stroke:#534AB7}.c-purple>.t,.c-purple>.th{fill:#3C3489}.c-purple>.ts{fill:#534AB7}.c-amber>rect,.c-amber>circle,.c-amber>ellipse,rect.c-amber,circle.c-amber,ellipse.c-amber{fill:#FAEEDA;stroke:#854F0B}.c-amber>.t,.c-amber>.th{fill:#633806}.c-amber>.ts{fill:#854F0B}.c-green>rect,.c-green>circle,.c-green>ellipse,rect.c-green,circle.c-green,ellipse.c-green{fill:#EAF3DE;stroke:#3B6D11}.c-green>.t,.c-green>.th{fill:#27500A}.c-green>.ts{fill:#3B6D11}.c-blue>rect,.c-blue>circle,.c-blue>ellipse,rect.c-blue,circle.c-blue,ellipse.c-blue{fill:#E6F1FB;stroke:#185FA5}.c-blue>.t,.c-blue>.th{fill:#0C447C}.c-blue>.ts{fill:#185FA5}.c-coral>rect,.c-coral>circle,.c-coral>ellipse,rect.c-coral,circle.c-coral,ellipse.c-coral{fill:#FAECE7;stroke:#993C1D}.c-coral>.t,.c-coral>.th{fill:#712B13}.c-coral>.ts{fill:#993C1D}</style><rect x="0" y="0" width="680" height="384" fill="#FFFFFF"/>
+<rect class="box" x="40" y="30" width="600" height="310" rx="8" stroke-width="0.5"/>
+<line x1="40" y1="62" x2="640" y2="62" stroke="var(--b)" stroke-width="0.5"/>
+<polygon points="72,39 72,53 84,46" fill="var(--t)"/>
+<text class="ts" x="340" y="46" text-anchor="middle" dominant-baseline="central">AINotes › iPhone 17 Pro</text>
+<line x1="150" y1="62" x2="150" y2="340" stroke="var(--b)" stroke-width="0.5"/>
+<text class="ts" x="95" y="200" text-anchor="middle" dominant-baseline="central">导航器</text>
+<text class="ts" x="166" y="84" dominant-baseline="central" style="font-family: var(--font-mono)">func characterCount(_ text: String) -&gt; Int {</text>
+<text class="ts" x="186" y="104" dominant-baseline="central" style="font-family: var(--font-mono)">let parts = text.split(separator: " ")</text>
+<g class="c-green">
+<rect x="158" y="114" width="474" height="22" rx="4" stroke-width="0.5"/>
+<text class="t" x="186" y="125" dominant-baseline="central" style="font-family: var(--font-mono)">return parts.count</text>
+<text class="ts" x="624" y="125" text-anchor="end" dominant-baseline="central">程序停在这里</text>
+</g>
+<text class="ts" x="166" y="150" dominant-baseline="central" style="font-family: var(--font-mono)">}</text>
+<line x1="150" y1="170" x2="640" y2="170" stroke="var(--b)" stroke-width="0.5"/>
+<text class="ts" x="166" y="182" dominant-baseline="central">调试栏：继续 / 单步</text>
+<line x1="150" y1="194" x2="640" y2="194" stroke="var(--b)" stroke-width="0.5"/>
+<line x1="380" y1="194" x2="380" y2="340" stroke="var(--b)" stroke-width="0.5"/>
+<text class="ts" x="164" y="212" dominant-baseline="central">变量视图</text>
+<text class="t" x="164" y="238" dominant-baseline="central" style="font-family: var(--font-mono)">text = "你好世界"</text>
+<text class="t" x="164" y="262" dominant-baseline="central" style="font-family: var(--font-mono)">parts = 1 value</text>
+<text class="ts" x="394" y="212" dominant-baseline="central">控制台</text>
+<text class="ts" x="394" y="234" dominant-baseline="central" style="font-family: var(--font-mono)">(lldb) v text</text>
+<text class="ts" x="394" y="252" dominant-baseline="central" style="font-family: var(--font-mono)">(String) text = "你好世界"</text>
+<text class="ts" x="394" y="270" dominant-baseline="central" style="font-family: var(--font-mono)">(lldb) po text.count</text>
+<text class="ts" x="394" y="288" dominant-baseline="central" style="font-family: var(--font-mono)">4</text>
+<g class="c-purple">
+<rect x="388" y="302" width="244" height="26" rx="4" stroke-width="0.5"/>
+<text class="th" x="398" y="315" dominant-baseline="central" style="font-family: var(--font-mono)">(lldb) ▏</text>
+<text class="ts" x="624" y="315" text-anchor="end" dominant-baseline="central">在这里输入，回车执行</text>
+</g>
+<g class="c-gray"><circle cx="656" cy="125" r="9" stroke-width="0.5"/><text class="th" x="656" y="125" text-anchor="middle" dominant-baseline="central">1</text></g>
+<g class="c-gray"><circle cx="656" cy="194" r="9" stroke-width="0.5"/><text class="th" x="656" y="194" text-anchor="middle" dominant-baseline="central">2</text></g>
+<g class="c-gray"><circle cx="656" cy="315" r="9" stroke-width="0.5"/><text class="th" x="656" y="315" text-anchor="middle" dominant-baseline="central">3</text></g>
+<text class="ts" x="340" y="364" text-anchor="middle" dominant-baseline="central">1 程序先停在断点　2 ⇧⌘Y 打开调试区　3 ⇧⌘C 进入控制台，在 (lldb) 后输入并回车</text>
+<text x="672" y="376" text-anchor="end" style="font-size:11px;fill:#888780">示意图</text></svg>

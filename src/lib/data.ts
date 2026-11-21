@@ -152,6 +152,13 @@ export function validate(
       for (const match of body.matchAll(/\]\(([^\s)]+)\)/g)) {
         const href = match[1];
         if (/^(https?:|mailto:|topic:|#)/.test(href)) continue;
+        const image = href.match(
+          /^\.\.\/\.\.\/(images\/[a-z0-9-]+\/[\w.-]+\.(?:png|jpe?g|gif|svg|webp))$/i,
+        );
+        if (image) {
+          if (!fs.existsSync(path.join(root, 'public', image[1]))) fail(`图片不存在: ${href}`);
+          continue;
+        }
         if (
           !href.endsWith('.md') ||
           path.dirname(path.resolve(path.dirname(file), href)) !==

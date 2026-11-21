@@ -1,0 +1,1274 @@
+{
+  "id": "android-1c7a0890",
+  "title": "Android 开发",
+  "category": "item-b86e418c",
+  "description": "以 Kotlin、Jetpack Compose 为主线（传统 View 系统仅用于互操作），面向借助 AI 编码代理开发并上架个人 Android App。先搭好 Android Studio、Gradle 工具链和 AI 协作的“构建—测试—截图”验证闭环，再依次学习 Kotlin 语言与协程、Android 平台基础、Compose 界面与状态、应用架构、网络与离线存储、测试与性能、系统能力、App 内 AI 能力，最后完成 Google Play 发布与商业化。贯穿案例为「AI 随手记」，与 iOS 主题使用同一案例，对应节点互相关联。",
+  "difficulty": "Beginner",
+  "mode": "path",
+  "demo": false,
+  "created": "2026-11-21T03:04:17.864Z",
+  "updated": "2026-11-21T03:04:39.213Z",
+  "tags": [
+    "Android",
+    "Kotlin",
+    "Jetpack Compose",
+    "移动开发",
+    "AI 协作开发"
+  ],
+  "modules": [
+    {
+      "id": "android-toolchain",
+      "title": "开发环境与工具链",
+      "topics": [
+        "android-studio-project",
+        "android-gradle",
+        "android-emulator-adb",
+        "android-sdk-versions"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-ai-workflow",
+      "title": "用 AI 协作开发",
+      "topics": [
+        "android-ai-agent-setup",
+        "android-ai-verify-loop"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-kotlin-basics",
+      "title": "Kotlin 语言基础",
+      "topics": [
+        "android-kotlin-null-safety",
+        "android-kotlin-functions-lambdas",
+        "android-kotlin-classes",
+        "android-kotlin-collections",
+        "android-kotlin-extensions-scope"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-kotlin-advanced",
+      "title": "Kotlin 进阶",
+      "topics": [
+        "android-kotlin-errors",
+        "android-kotlin-generics",
+        "android-kotlin-delegation",
+        "android-kotlin-dsl"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-coroutines",
+      "title": "协程与 Flow",
+      "topics": [
+        "android-coroutine-basics",
+        "android-structured-concurrency",
+        "android-flow",
+        "android-stateflow"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-platform",
+      "title": "Android 平台基础",
+      "topics": [
+        "android-components",
+        "android-activity-lifecycle",
+        "android-intents-tasks",
+        "android-resources-i18n"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-compose-basics",
+      "title": "Jetpack Compose 界面基础",
+      "topics": [
+        "android-compose-intro",
+        "android-compose-layout",
+        "android-compose-lazy",
+        "android-material3",
+        "android-edge-to-edge-adaptive"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-compose-advanced",
+      "title": "Compose 进阶：状态、副作用与性能",
+      "topics": [
+        "android-compose-state",
+        "android-compose-effects",
+        "android-compose-performance",
+        "android-compose-animation",
+        "android-view-interop"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-architecture",
+      "title": "应用架构",
+      "topics": [
+        "android-arch-layers",
+        "android-viewmodel-udf",
+        "android-hilt",
+        "android-navigation",
+        "android-modularization"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-network",
+      "title": "网络请求",
+      "topics": [
+        "android-retrofit-okhttp",
+        "android-serialization",
+        "android-api-client"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-persistence",
+      "title": "本地存储与离线",
+      "topics": [
+        "android-datastore",
+        "android-room",
+        "android-offline-first",
+        "android-secure-storage"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-engineering",
+      "title": "测试、调试与性能",
+      "topics": [
+        "android-unit-testing",
+        "android-compose-ui-testing",
+        "android-debug-profiler",
+        "android-baseline-r8",
+        "android-ai-code-review"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-system",
+      "title": "系统能力集成",
+      "topics": [
+        "android-permissions",
+        "android-workmanager",
+        "android-notifications-fcm",
+        "android-camera-media-location",
+        "android-widgets-shortcuts"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-ai-features",
+      "title": "在 App 中集成 AI",
+      "topics": [
+        "android-cloud-llm",
+        "android-on-device-ai",
+        "android-ai-structured-tools"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-release",
+      "title": "发布与商业化",
+      "topics": [
+        "android-release-build",
+        "android-play-console",
+        "android-play-billing",
+        "android-crash-vitals",
+        "android-ci-cd"
+      ],
+      "children": []
+    },
+    {
+      "id": "android-extend",
+      "title": "扩展与综合实践",
+      "topics": [
+        "android-kmp",
+        "android-capstone"
+      ],
+      "children": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "android-studio-project",
+      "title": "Android Studio 与项目结构：模块、源集与 Manifest",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [],
+      "related": [
+        "ios-xcode-project"
+      ],
+      "tags": [
+        "Android 开发",
+        "开发环境与工具链"
+      ]
+    },
+    {
+      "id": "android-gradle",
+      "title": "Gradle 构建：Kotlin DSL、版本目录与构建变体",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-studio-project"
+      ],
+      "related": [],
+      "tags": [
+        "Android 开发",
+        "开发环境与工具链"
+      ]
+    },
+    {
+      "id": "android-emulator-adb",
+      "title": "模拟器、真机调试与 adb",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-studio-project"
+      ],
+      "related": [
+        "ios-simulator-device"
+      ],
+      "tags": [
+        "Android 开发",
+        "开发环境与工具链"
+      ]
+    },
+    {
+      "id": "android-sdk-versions",
+      "title": "SDK 版本：minSdk、targetSdk、compileSdk 与兼容性",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-gradle"
+      ],
+      "related": [],
+      "tags": [
+        "Android 开发",
+        "开发环境与工具链"
+      ]
+    },
+    {
+      "id": "android-ai-agent-setup",
+      "title": "AI 编码代理的工作环境：项目说明与 Gradle 命令行构建",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-gradle",
+        "android-emulator-adb"
+      ],
+      "related": [
+        "harness-18062c36",
+        "skills-0298cba5",
+        "ios-ai-agent-setup"
+      ],
+      "tags": [
+        "Android 开发",
+        "用 AI 协作开发"
+      ]
+    },
+    {
+      "id": "android-ai-verify-loop",
+      "title": "让 AI 自我验证：编译、测试、模拟器与截图闭环",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-ai-agent-setup"
+      ],
+      "related": [
+        "item-2af8d5bf",
+        "evals-9878ab5d",
+        "ios-ai-verify-loop"
+      ],
+      "tags": [
+        "Android 开发",
+        "用 AI 协作开发"
+      ]
+    },
+    {
+      "id": "android-kotlin-null-safety",
+      "title": "变量、类型与空安全",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [],
+      "related": [
+        "ios-swift-values-optionals"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 语言基础"
+      ]
+    },
+    {
+      "id": "android-kotlin-functions-lambdas",
+      "title": "函数、Lambda 与高阶函数",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-null-safety"
+      ],
+      "related": [
+        "ios-swift-functions-closures"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 语言基础"
+      ]
+    },
+    {
+      "id": "android-kotlin-classes",
+      "title": "类、data class、sealed 与 object",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-functions-lambdas"
+      ],
+      "related": [
+        "ios-swift-struct-class-enum"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 语言基础"
+      ]
+    },
+    {
+      "id": "android-kotlin-collections",
+      "title": "集合操作与序列",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-functions-lambdas"
+      ],
+      "related": [
+        "ios-swift-collections-control"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 语言基础"
+      ]
+    },
+    {
+      "id": "android-kotlin-extensions-scope",
+      "title": "扩展函数与作用域函数",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-functions-lambdas",
+        "android-kotlin-classes"
+      ],
+      "related": [
+        "ios-swift-protocols"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 语言基础"
+      ]
+    },
+    {
+      "id": "android-kotlin-errors",
+      "title": "异常、Result 与错误建模",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-classes"
+      ],
+      "related": [
+        "ios-swift-errors"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 进阶"
+      ]
+    },
+    {
+      "id": "android-kotlin-generics",
+      "title": "泛型、型变 in／out 与 reified",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-classes"
+      ],
+      "related": [
+        "ios-swift-generics"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 进阶"
+      ]
+    },
+    {
+      "id": "android-kotlin-delegation",
+      "title": "委托：by lazy、属性委托与类委托",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-classes"
+      ],
+      "related": [
+        "ios-swift-wrappers-macros"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 进阶"
+      ]
+    },
+    {
+      "id": "android-kotlin-dsl",
+      "title": "带接收者的 Lambda 与 DSL",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-extensions-scope"
+      ],
+      "related": [
+        "ios-swift-wrappers-macros"
+      ],
+      "tags": [
+        "Android 开发",
+        "Kotlin 进阶"
+      ]
+    },
+    {
+      "id": "android-coroutine-basics",
+      "title": "协程基础：suspend、CoroutineScope 与 Dispatcher",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-functions-lambdas"
+      ],
+      "related": [
+        "ios-async-await"
+      ],
+      "tags": [
+        "Android 开发",
+        "协程与 Flow"
+      ]
+    },
+    {
+      "id": "android-structured-concurrency",
+      "title": "结构化并发：Job、取消与异常传播",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-coroutine-basics",
+        "android-kotlin-errors"
+      ],
+      "related": [
+        "ios-actors"
+      ],
+      "tags": [
+        "Android 开发",
+        "协程与 Flow"
+      ]
+    },
+    {
+      "id": "android-flow",
+      "title": "Flow：冷流、操作符与背压",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-coroutine-basics"
+      ],
+      "related": [
+        "ios-async-sequence"
+      ],
+      "tags": [
+        "Android 开发",
+        "协程与 Flow"
+      ]
+    },
+    {
+      "id": "android-stateflow",
+      "title": "StateFlow、SharedFlow 与生命周期感知收集",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-flow"
+      ],
+      "related": [
+        "ios-observation"
+      ],
+      "tags": [
+        "Android 开发",
+        "协程与 Flow"
+      ]
+    },
+    {
+      "id": "android-components",
+      "title": "四大组件与应用进程模型",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-studio-project"
+      ],
+      "related": [],
+      "tags": [
+        "Android 开发",
+        "Android 平台基础"
+      ]
+    },
+    {
+      "id": "android-activity-lifecycle",
+      "title": "Activity 生命周期、配置变更与进程终止",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-components"
+      ],
+      "related": [
+        "ios-app-lifecycle"
+      ],
+      "tags": [
+        "Android 开发",
+        "Android 平台基础"
+      ]
+    },
+    {
+      "id": "android-intents-tasks",
+      "title": "Intent、任务栈与深层链接",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-components"
+      ],
+      "related": [
+        "ios-deep-links"
+      ],
+      "tags": [
+        "Android 开发",
+        "Android 平台基础"
+      ]
+    },
+    {
+      "id": "android-resources-i18n",
+      "title": "资源系统：多语言、屏幕密度与资源限定符",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-studio-project"
+      ],
+      "related": [
+        "ios-swiftui-resources"
+      ],
+      "tags": [
+        "Android 开发",
+        "Android 平台基础"
+      ]
+    },
+    {
+      "id": "android-compose-intro",
+      "title": "Composable 函数与重组",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-dsl",
+        "android-activity-lifecycle"
+      ],
+      "related": [
+        "ios-swiftui-view"
+      ],
+      "tags": [
+        "Android 开发",
+        "Jetpack Compose 界面基础"
+      ]
+    },
+    {
+      "id": "android-compose-layout",
+      "title": "布局与 Modifier：Row、Column、Box 与修饰顺序",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-intro"
+      ],
+      "related": [
+        "ios-swiftui-layout"
+      ],
+      "tags": [
+        "Android 开发",
+        "Jetpack Compose 界面基础"
+      ]
+    },
+    {
+      "id": "android-compose-lazy",
+      "title": "列表：LazyColumn、LazyGrid 与 key",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-layout",
+        "android-kotlin-collections"
+      ],
+      "related": [
+        "ios-swiftui-list-form"
+      ],
+      "tags": [
+        "Android 开发",
+        "Jetpack Compose 界面基础"
+      ]
+    },
+    {
+      "id": "android-material3",
+      "title": "Material 3：组件、主题、深色模式与无障碍",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-layout",
+        "android-resources-i18n"
+      ],
+      "related": [
+        "ios-hig-accessibility"
+      ],
+      "tags": [
+        "Android 开发",
+        "Jetpack Compose 界面基础"
+      ]
+    },
+    {
+      "id": "android-edge-to-edge-adaptive",
+      "title": "边到边显示、WindowInsets 与自适应布局",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-layout",
+        "android-sdk-versions"
+      ],
+      "related": [
+        "ios-multiplatform"
+      ],
+      "tags": [
+        "Android 开发",
+        "Jetpack Compose 界面基础"
+      ]
+    },
+    {
+      "id": "android-compose-state",
+      "title": "State、remember、rememberSaveable 与状态提升",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-intro",
+        "android-kotlin-delegation"
+      ],
+      "related": [
+        "ios-state-binding"
+      ],
+      "tags": [
+        "Android 开发",
+        "Compose 进阶：状态、副作用与性能"
+      ]
+    },
+    {
+      "id": "android-compose-effects",
+      "title": "副作用：LaunchedEffect、DisposableEffect 与 rememberCoroutineScope",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-state",
+        "android-coroutine-basics"
+      ],
+      "related": [
+        "ios-view-lifecycle"
+      ],
+      "tags": [
+        "Android 开发",
+        "Compose 进阶：状态、副作用与性能"
+      ]
+    },
+    {
+      "id": "android-compose-performance",
+      "title": "重组性能：稳定性、derivedStateOf 与延迟读取",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-state"
+      ],
+      "related": [],
+      "tags": [
+        "Android 开发",
+        "Compose 进阶：状态、副作用与性能"
+      ]
+    },
+    {
+      "id": "android-compose-animation",
+      "title": "动画、手势与转场",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-state"
+      ],
+      "related": [
+        "ios-animation"
+      ],
+      "tags": [
+        "Android 开发",
+        "Compose 进阶：状态、副作用与性能"
+      ]
+    },
+    {
+      "id": "android-view-interop",
+      "title": "与传统 View 互操作：AndroidView 与 ComposeView",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-intro",
+        "android-activity-lifecycle"
+      ],
+      "related": [
+        "ios-uikit-interop"
+      ],
+      "tags": [
+        "Android 开发",
+        "Compose 进阶：状态、副作用与性能"
+      ]
+    },
+    {
+      "id": "android-arch-layers",
+      "title": "官方推荐架构：UI 层、领域层与数据层",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-state"
+      ],
+      "related": [
+        "ios-architecture-di"
+      ],
+      "tags": [
+        "Android 开发",
+        "应用架构"
+      ]
+    },
+    {
+      "id": "android-viewmodel-udf",
+      "title": "ViewModel、UI State 与单向数据流",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-arch-layers",
+        "android-stateflow",
+        "android-activity-lifecycle"
+      ],
+      "related": [
+        "ios-state-architecture"
+      ],
+      "tags": [
+        "Android 开发",
+        "应用架构"
+      ]
+    },
+    {
+      "id": "android-hilt",
+      "title": "依赖注入：Hilt",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-arch-layers",
+        "android-gradle"
+      ],
+      "related": [
+        "ios-architecture-di"
+      ],
+      "tags": [
+        "Android 开发",
+        "应用架构"
+      ]
+    },
+    {
+      "id": "android-navigation",
+      "title": "Compose 导航：返回栈、类型安全路由与深层链接",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-viewmodel-udf",
+        "android-intents-tasks"
+      ],
+      "related": [
+        "ios-navigation-stack"
+      ],
+      "tags": [
+        "Android 开发",
+        "应用架构"
+      ]
+    },
+    {
+      "id": "android-modularization",
+      "title": "多模块化：功能模块与核心模块",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-gradle",
+        "android-hilt"
+      ],
+      "related": [
+        "ios-spm-modules"
+      ],
+      "tags": [
+        "Android 开发",
+        "应用架构"
+      ]
+    },
+    {
+      "id": "android-retrofit-okhttp",
+      "title": "网络请求：Retrofit、OkHttp 与 Ktor Client",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-coroutine-basics"
+      ],
+      "related": [
+        "ios-urlsession"
+      ],
+      "tags": [
+        "Android 开发",
+        "网络请求"
+      ]
+    },
+    {
+      "id": "android-serialization",
+      "title": "kotlinx.serialization 与 JSON 建模",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-kotlin-classes"
+      ],
+      "related": [
+        "ios-codable"
+      ],
+      "tags": [
+        "Android 开发",
+        "网络请求"
+      ]
+    },
+    {
+      "id": "android-api-client",
+      "title": "API 层封装：错误、重试、鉴权与拦截器",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-retrofit-okhttp",
+        "android-serialization",
+        "android-structured-concurrency"
+      ],
+      "related": [
+        "item-f653b3ff",
+        "ios-api-client"
+      ],
+      "tags": [
+        "Android 开发",
+        "网络请求"
+      ]
+    },
+    {
+      "id": "android-datastore",
+      "title": "DataStore：键值与类型化配置",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-flow"
+      ],
+      "related": [
+        "ios-userdefaults-files"
+      ],
+      "tags": [
+        "Android 开发",
+        "本地存储与离线"
+      ]
+    },
+    {
+      "id": "android-room",
+      "title": "Room：Entity、DAO、关系与迁移",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-flow",
+        "android-kotlin-classes"
+      ],
+      "related": [
+        "ios-swiftdata"
+      ],
+      "tags": [
+        "Android 开发",
+        "本地存储与离线"
+      ]
+    },
+    {
+      "id": "android-offline-first",
+      "title": "离线优先：Repository、单一数据源与同步",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-room",
+        "android-api-client",
+        "android-arch-layers"
+      ],
+      "related": [
+        "ios-cloudkit"
+      ],
+      "tags": [
+        "Android 开发",
+        "本地存储与离线"
+      ]
+    },
+    {
+      "id": "android-secure-storage",
+      "title": "安全存储：Keystore 与凭据保护",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-datastore"
+      ],
+      "related": [
+        "ios-keychain"
+      ],
+      "tags": [
+        "Android 开发",
+        "本地存储与离线"
+      ]
+    },
+    {
+      "id": "android-unit-testing",
+      "title": "单元测试：JUnit、协程测试与测试替身",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-viewmodel-udf",
+        "android-coroutine-basics"
+      ],
+      "related": [
+        "ios-swift-testing"
+      ],
+      "tags": [
+        "Android 开发",
+        "测试、调试与性能"
+      ]
+    },
+    {
+      "id": "android-compose-ui-testing",
+      "title": "Compose UI 测试与截图测试",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-unit-testing",
+        "android-compose-intro"
+      ],
+      "related": [
+        "ios-ui-testing-previews"
+      ],
+      "tags": [
+        "Android 开发",
+        "测试、调试与性能"
+      ]
+    },
+    {
+      "id": "android-debug-profiler",
+      "title": "调试与性能：Profiler、内存泄漏与 ANR",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-emulator-adb"
+      ],
+      "related": [
+        "ios-instruments"
+      ],
+      "tags": [
+        "Android 开发",
+        "测试、调试与性能"
+      ]
+    },
+    {
+      "id": "android-baseline-r8",
+      "title": "启动与包体优化：Baseline Profile 与 R8",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-debug-profiler",
+        "android-gradle"
+      ],
+      "related": [],
+      "tags": [
+        "Android 开发",
+        "测试、调试与性能"
+      ]
+    },
+    {
+      "id": "android-ai-code-review",
+      "title": "审查 AI 生成的 Kotlin 代码：生命周期、协程与权限",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-ai-verify-loop",
+        "android-structured-concurrency",
+        "android-activity-lifecycle"
+      ],
+      "related": [
+        "ios-ai-code-review"
+      ],
+      "tags": [
+        "Android 开发",
+        "测试、调试与性能"
+      ]
+    },
+    {
+      "id": "android-permissions",
+      "title": "运行时权限与隐私",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-activity-lifecycle"
+      ],
+      "related": [
+        "ios-permissions-privacy"
+      ],
+      "tags": [
+        "Android 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "android-workmanager",
+      "title": "WorkManager、前台服务与后台执行限制",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-coroutine-basics",
+        "android-components"
+      ],
+      "related": [
+        "ios-background-tasks"
+      ],
+      "tags": [
+        "Android 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "android-notifications-fcm",
+      "title": "通知渠道与 FCM 推送",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-permissions"
+      ],
+      "related": [
+        "ios-notifications"
+      ],
+      "tags": [
+        "Android 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "android-camera-media-location",
+      "title": "相机、照片选择器与定位",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-permissions"
+      ],
+      "related": [
+        "ios-camera-photos-location"
+      ],
+      "tags": [
+        "Android 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "android-widgets-shortcuts",
+      "title": "Glance 小组件与 App Shortcuts",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-compose-intro",
+        "android-workmanager"
+      ],
+      "related": [
+        "ios-widgets-intents"
+      ],
+      "tags": [
+        "Android 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "android-cloud-llm",
+      "title": "调用云端大模型：后端代理、流式输出与密钥安全",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-api-client",
+        "android-flow",
+        "android-secure-storage"
+      ],
+      "related": [
+        "item-6711f6d9",
+        "ai-7ed4bed9",
+        "ios-cloud-llm"
+      ],
+      "tags": [
+        "Android 开发",
+        "在 App 中集成 AI"
+      ]
+    },
+    {
+      "id": "android-on-device-ai",
+      "title": "端侧 AI：Gemini Nano、ML Kit 与 LiteRT",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-coroutine-basics",
+        "android-sdk-versions"
+      ],
+      "related": [
+        "ai-7ed4bed9",
+        "ios-on-device-ai"
+      ],
+      "tags": [
+        "Android 开发",
+        "在 App 中集成 AI"
+      ]
+    },
+    {
+      "id": "android-ai-structured-tools",
+      "title": "AI 结构化输出与函数调用的 App 端实现",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-cloud-llm",
+        "android-serialization"
+      ],
+      "related": [
+        "schema-1afe35e1",
+        "tool-calling-0d851dd7",
+        "ios-ai-structured-tools"
+      ],
+      "tags": [
+        "Android 开发",
+        "在 App 中集成 AI"
+      ]
+    },
+    {
+      "id": "android-release-build",
+      "title": "发布构建：App Bundle、应用签名与版本管理",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-sdk-versions",
+        "android-baseline-r8"
+      ],
+      "related": [
+        "ios-signing"
+      ],
+      "tags": [
+        "Android 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "android-play-console",
+      "title": "Play Console：测试轨道、商店信息与政策要求",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-release-build"
+      ],
+      "related": [
+        "ios-testflight-asc",
+        "ios-app-review"
+      ],
+      "tags": [
+        "Android 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "android-play-billing",
+      "title": "应用内购买与订阅：Google Play 结算库",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-coroutine-basics",
+        "android-play-console"
+      ],
+      "related": [
+        "ios-storekit"
+      ],
+      "tags": [
+        "Android 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "android-crash-vitals",
+      "title": "崩溃与质量监控：Crashlytics 与 Android vitals",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-play-console"
+      ],
+      "related": [
+        "ios-crash-metrics"
+      ],
+      "tags": [
+        "Android 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "android-ci-cd",
+      "title": "持续集成与自动发布：CI 构建、测试与上传 Play",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-release-build",
+        "android-unit-testing"
+      ],
+      "related": [
+        "item-524b1b2c",
+        "ios-ci-cd"
+      ],
+      "tags": [
+        "Android 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "android-kmp",
+      "title": "跨平台扩展：Kotlin Multiplatform 与共享代码",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-coroutine-basics",
+        "android-modularization"
+      ],
+      "related": [
+        "ios-spm-modules"
+      ],
+      "tags": [
+        "Android 开发",
+        "扩展与综合实践"
+      ]
+    },
+    {
+      "id": "android-capstone",
+      "title": "综合实践：用 AI 协作从需求到上架一个 App",
+      "minutes": 90,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "android-ai-code-review",
+        "android-play-console",
+        "android-ci-cd"
+      ],
+      "related": [
+        "ios-capstone"
+      ],
+      "tags": [
+        "Android 开发",
+        "扩展与综合实践"
+      ]
+    }
+  ]
+}

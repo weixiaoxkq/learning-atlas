@@ -1,0 +1,1219 @@
+{
+  "id": "ios-857a90e7",
+  "title": "iOS 开发",
+  "category": "item-b86e418c",
+  "description": "以 Swift、SwiftUI 为主线（UIKit 仅用于互操作），面向借助 AI 编码代理开发并上架个人 iPhone App。先搭好 Xcode 工具链和 AI 协作的“构建—测试—截图”验证闭环，再依次学习 Swift 语言与并发、SwiftUI 界面与状态、导航、网络与本地存储、架构测试与性能、系统能力、App 内 AI 能力，最后完成 App Store 发布与商业化。贯穿案例为「AI 随手记」，与 Android 主题使用同一案例，对应节点互相关联。",
+  "difficulty": "Beginner",
+  "mode": "path",
+  "demo": false,
+  "created": "2026-11-21T03:04:17.646Z",
+  "updated": "2026-11-21T11:25:15.573Z",
+  "tags": [
+    "iOS",
+    "Swift",
+    "SwiftUI",
+    "移动开发",
+    "AI 协作开发"
+  ],
+  "modules": [
+    {
+      "id": "ios-toolchain",
+      "title": "开发环境与工具链",
+      "topics": [
+        "ios-xcode-project",
+        "ios-simulator-device",
+        "ios-signing"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-ai-workflow",
+      "title": "用 AI 协作开发",
+      "topics": [
+        "ios-ai-agent-setup",
+        "ios-ai-verify-loop"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-swift-basics",
+      "title": "Swift 语言基础",
+      "topics": [
+        "ios-swift-values-optionals",
+        "ios-swift-collections-control",
+        "ios-swift-functions-closures",
+        "ios-swift-struct-class-enum",
+        "ios-swift-errors"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-swift-advanced",
+      "title": "Swift 进阶",
+      "topics": [
+        "ios-swift-protocols",
+        "ios-swift-generics",
+        "ios-swift-arc",
+        "ios-swift-wrappers-macros"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-concurrency",
+      "title": "Swift 并发",
+      "topics": [
+        "ios-async-await",
+        "ios-actors",
+        "ios-sendable-swift6",
+        "ios-async-sequence"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-swiftui-basics",
+      "title": "SwiftUI 界面基础",
+      "topics": [
+        "ios-swiftui-view",
+        "ios-swiftui-layout",
+        "ios-swiftui-list-form",
+        "ios-swiftui-resources",
+        "ios-hig-accessibility"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-state",
+      "title": "状态管理与数据流",
+      "topics": [
+        "ios-state-binding",
+        "ios-observation",
+        "ios-view-lifecycle",
+        "ios-state-architecture"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-navigation",
+      "title": "导航与应用结构",
+      "topics": [
+        "ios-navigation-stack",
+        "ios-modal-tab",
+        "ios-app-lifecycle",
+        "ios-deep-links"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-advanced-ui",
+      "title": "动画、交互与 UIKit 互操作",
+      "topics": [
+        "ios-animation",
+        "ios-custom-layout-canvas",
+        "ios-uikit-interop"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-networking",
+      "title": "网络请求",
+      "topics": [
+        "ios-urlsession",
+        "ios-codable",
+        "ios-api-client"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-persistence",
+      "title": "本地存储与同步",
+      "topics": [
+        "ios-userdefaults-files",
+        "ios-swiftdata",
+        "ios-keychain",
+        "ios-cloudkit"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-engineering",
+      "title": "架构、测试与性能",
+      "topics": [
+        "ios-architecture-di",
+        "ios-spm-modules",
+        "ios-swift-testing",
+        "ios-ui-testing-previews",
+        "ios-instruments",
+        "ios-ai-code-review"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-system",
+      "title": "系统能力集成",
+      "topics": [
+        "ios-permissions-privacy",
+        "ios-notifications",
+        "ios-background-tasks",
+        "ios-camera-photos-location",
+        "ios-widgets-intents"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-ai-features",
+      "title": "在 App 中集成 AI",
+      "topics": [
+        "ios-cloud-llm",
+        "ios-on-device-ai",
+        "ios-ai-structured-tools"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-release",
+      "title": "发布与商业化",
+      "topics": [
+        "ios-testflight-asc",
+        "ios-app-review",
+        "ios-storekit",
+        "ios-crash-metrics",
+        "ios-ci-cd"
+      ],
+      "children": []
+    },
+    {
+      "id": "ios-extend",
+      "title": "扩展与综合实践",
+      "topics": [
+        "ios-multiplatform",
+        "ios-capstone"
+      ],
+      "children": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "ios-xcode-project",
+      "title": "Xcode 工程结构：Project、Target、Scheme 与构建配置",
+      "minutes": 30,
+      "updated": "2026-11-21T11:25:15.573Z",
+      "prerequisites": [],
+      "related": [
+        "android-studio-project"
+      ],
+      "tags": [
+        "iOS 开发",
+        "开发环境与工具链"
+      ]
+    },
+    {
+      "id": "ios-simulator-device",
+      "title": "模拟器、真机运行与调试基础",
+      "minutes": 30,
+      "updated": "2026-11-21T11:25:15.573Z",
+      "prerequisites": [
+        "ios-xcode-project"
+      ],
+      "related": [
+        "android-emulator-adb"
+      ],
+      "tags": [
+        "iOS 开发",
+        "开发环境与工具链"
+      ]
+    },
+    {
+      "id": "ios-signing",
+      "title": "开发者账号、证书、Bundle ID 与描述文件",
+      "minutes": 45,
+      "updated": "2026-11-21T11:25:15.573Z",
+      "prerequisites": [
+        "ios-xcode-project"
+      ],
+      "related": [
+        "android-release-build"
+      ],
+      "tags": [
+        "iOS 开发",
+        "开发环境与工具链"
+      ]
+    },
+    {
+      "id": "ios-ai-agent-setup",
+      "title": "AI 编码代理的工作环境：项目说明与命令行构建",
+      "minutes": 45,
+      "updated": "2026-11-21T11:25:15.573Z",
+      "prerequisites": [
+        "ios-simulator-device"
+      ],
+      "related": [
+        "harness-18062c36",
+        "skills-0298cba5",
+        "android-ai-agent-setup"
+      ],
+      "tags": [
+        "iOS 开发",
+        "用 AI 协作开发"
+      ]
+    },
+    {
+      "id": "ios-ai-verify-loop",
+      "title": "让 AI 自我验证：构建错误、测试与模拟器截图闭环",
+      "minutes": 45,
+      "updated": "2026-11-21T11:25:15.573Z",
+      "prerequisites": [
+        "ios-ai-agent-setup"
+      ],
+      "related": [
+        "item-2af8d5bf",
+        "evals-9878ab5d",
+        "android-ai-verify-loop"
+      ],
+      "tags": [
+        "iOS 开发",
+        "用 AI 协作开发"
+      ]
+    },
+    {
+      "id": "ios-swift-values-optionals",
+      "title": "常量、变量、类型推断与 Optional",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [],
+      "related": [
+        "android-kotlin-null-safety"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 语言基础"
+      ]
+    },
+    {
+      "id": "ios-swift-collections-control",
+      "title": "集合、控制流与模式匹配",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-values-optionals"
+      ],
+      "related": [
+        "android-kotlin-collections"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 语言基础"
+      ]
+    },
+    {
+      "id": "ios-swift-functions-closures",
+      "title": "函数、闭包与值捕获",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-values-optionals"
+      ],
+      "related": [
+        "android-kotlin-functions-lambdas"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 语言基础"
+      ]
+    },
+    {
+      "id": "ios-swift-struct-class-enum",
+      "title": "struct、class 与 enum：值类型与引用类型",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-functions-closures"
+      ],
+      "related": [
+        "android-kotlin-classes"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 语言基础"
+      ]
+    },
+    {
+      "id": "ios-swift-errors",
+      "title": "错误处理：throws、try、Result 与 typed throws",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-struct-class-enum"
+      ],
+      "related": [
+        "android-kotlin-errors"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 语言基础"
+      ]
+    },
+    {
+      "id": "ios-swift-protocols",
+      "title": "协议、扩展与面向协议编程",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-struct-class-enum"
+      ],
+      "related": [
+        "android-kotlin-extensions-scope"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 进阶"
+      ]
+    },
+    {
+      "id": "ios-swift-generics",
+      "title": "泛型、关联类型与 some／any",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-protocols"
+      ],
+      "related": [
+        "android-kotlin-generics"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 进阶"
+      ]
+    },
+    {
+      "id": "ios-swift-arc",
+      "title": "ARC 内存管理：强引用循环、weak 与 unowned",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-struct-class-enum",
+        "ios-swift-functions-closures"
+      ],
+      "related": [],
+      "tags": [
+        "iOS 开发",
+        "Swift 进阶"
+      ]
+    },
+    {
+      "id": "ios-swift-wrappers-macros",
+      "title": "属性包装器、Result Builder 与宏",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-protocols",
+        "ios-swift-generics"
+      ],
+      "related": [
+        "android-kotlin-delegation",
+        "android-kotlin-dsl"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 进阶"
+      ]
+    },
+    {
+      "id": "ios-async-await",
+      "title": "async/await、Task 与结构化并发",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-functions-closures",
+        "ios-swift-errors"
+      ],
+      "related": [
+        "android-coroutine-basics"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 并发"
+      ]
+    },
+    {
+      "id": "ios-actors",
+      "title": "actor、@MainActor 与数据隔离",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-async-await"
+      ],
+      "related": [
+        "android-structured-concurrency"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 并发"
+      ]
+    },
+    {
+      "id": "ios-sendable-swift6",
+      "title": "Sendable 与 Swift 6 严格并发检查",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-actors"
+      ],
+      "related": [],
+      "tags": [
+        "iOS 开发",
+        "Swift 并发"
+      ]
+    },
+    {
+      "id": "ios-async-sequence",
+      "title": "AsyncSequence、取消与超时",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-async-await"
+      ],
+      "related": [
+        "android-flow"
+      ],
+      "tags": [
+        "iOS 开发",
+        "Swift 并发"
+      ]
+    },
+    {
+      "id": "ios-swiftui-view",
+      "title": "View、body 与修饰符顺序",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-protocols"
+      ],
+      "related": [
+        "android-compose-intro"
+      ],
+      "tags": [
+        "iOS 开发",
+        "SwiftUI 界面基础"
+      ]
+    },
+    {
+      "id": "ios-swiftui-layout",
+      "title": "布局系统：Stack、Grid、frame 与对齐",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-view"
+      ],
+      "related": [
+        "android-compose-layout"
+      ],
+      "tags": [
+        "iOS 开发",
+        "SwiftUI 界面基础"
+      ]
+    },
+    {
+      "id": "ios-swiftui-list-form",
+      "title": "List、ForEach、Form 与 Identifiable",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-layout",
+        "ios-swift-collections-control"
+      ],
+      "related": [
+        "android-compose-lazy"
+      ],
+      "tags": [
+        "iOS 开发",
+        "SwiftUI 界面基础"
+      ]
+    },
+    {
+      "id": "ios-swiftui-resources",
+      "title": "文本、图片、SF Symbols 与资源目录",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-view"
+      ],
+      "related": [
+        "android-resources-i18n"
+      ],
+      "tags": [
+        "iOS 开发",
+        "SwiftUI 界面基础"
+      ]
+    },
+    {
+      "id": "ios-hig-accessibility",
+      "title": "设计规范：HIG、深色模式、动态字体与无障碍",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-layout"
+      ],
+      "related": [
+        "android-material3"
+      ],
+      "tags": [
+        "iOS 开发",
+        "SwiftUI 界面基础"
+      ]
+    },
+    {
+      "id": "ios-state-binding",
+      "title": "@State、@Binding 与单一数据源",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-view",
+        "ios-swift-wrappers-macros"
+      ],
+      "related": [
+        "android-compose-state"
+      ],
+      "tags": [
+        "iOS 开发",
+        "状态管理与数据流"
+      ]
+    },
+    {
+      "id": "ios-observation",
+      "title": "Observation：@Observable、@Bindable 与 @Environment",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-state-binding",
+        "ios-swift-struct-class-enum"
+      ],
+      "related": [
+        "android-stateflow"
+      ],
+      "tags": [
+        "iOS 开发",
+        "状态管理与数据流"
+      ]
+    },
+    {
+      "id": "ios-view-lifecycle",
+      "title": "视图身份、生命周期与 .task",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-state-binding",
+        "ios-async-await"
+      ],
+      "related": [
+        "android-compose-effects"
+      ],
+      "tags": [
+        "iOS 开发",
+        "状态管理与数据流"
+      ]
+    },
+    {
+      "id": "ios-state-architecture",
+      "title": "状态放在哪里：View、Model 与 ViewModel 的分工",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-observation"
+      ],
+      "related": [
+        "android-viewmodel-udf"
+      ],
+      "tags": [
+        "iOS 开发",
+        "状态管理与数据流"
+      ]
+    },
+    {
+      "id": "ios-navigation-stack",
+      "title": "NavigationStack 与数据驱动导航",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-list-form",
+        "ios-state-binding"
+      ],
+      "related": [
+        "android-navigation"
+      ],
+      "tags": [
+        "iOS 开发",
+        "导航与应用结构"
+      ]
+    },
+    {
+      "id": "ios-modal-tab",
+      "title": "TabView、Sheet、Alert 与全屏页面",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-navigation-stack"
+      ],
+      "related": [],
+      "tags": [
+        "iOS 开发",
+        "导航与应用结构"
+      ]
+    },
+    {
+      "id": "ios-app-lifecycle",
+      "title": "App、Scene 与应用生命周期",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-view"
+      ],
+      "related": [
+        "android-activity-lifecycle"
+      ],
+      "tags": [
+        "iOS 开发",
+        "导航与应用结构"
+      ]
+    },
+    {
+      "id": "ios-deep-links",
+      "title": "URL Scheme、Universal Links 与深层链接",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-navigation-stack",
+        "ios-app-lifecycle"
+      ],
+      "related": [
+        "android-intents-tasks"
+      ],
+      "tags": [
+        "iOS 开发",
+        "导航与应用结构"
+      ]
+    },
+    {
+      "id": "ios-animation",
+      "title": "动画、手势与转场",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-state-binding"
+      ],
+      "related": [
+        "android-compose-animation"
+      ],
+      "tags": [
+        "iOS 开发",
+        "动画、交互与 UIKit 互操作"
+      ]
+    },
+    {
+      "id": "ios-custom-layout-canvas",
+      "title": "自定义 Layout、Canvas 与图表",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-layout"
+      ],
+      "related": [],
+      "tags": [
+        "iOS 开发",
+        "动画、交互与 UIKit 互操作"
+      ]
+    },
+    {
+      "id": "ios-uikit-interop",
+      "title": "UIKit 互操作：UIViewRepresentable 与 UIHostingController",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-view",
+        "ios-swift-arc"
+      ],
+      "related": [
+        "android-view-interop"
+      ],
+      "tags": [
+        "iOS 开发",
+        "动画、交互与 UIKit 互操作"
+      ]
+    },
+    {
+      "id": "ios-urlsession",
+      "title": "URLSession 与 async/await 网络请求",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-async-await"
+      ],
+      "related": [
+        "android-retrofit-okhttp"
+      ],
+      "tags": [
+        "iOS 开发",
+        "网络请求"
+      ]
+    },
+    {
+      "id": "ios-codable",
+      "title": "Codable：JSON 编解码与数据建模",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-struct-class-enum",
+        "ios-swift-protocols"
+      ],
+      "related": [
+        "android-serialization"
+      ],
+      "tags": [
+        "iOS 开发",
+        "网络请求"
+      ]
+    },
+    {
+      "id": "ios-api-client",
+      "title": "API 客户端封装：错误、重试与鉴权",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-urlsession",
+        "ios-codable",
+        "ios-swift-errors"
+      ],
+      "related": [
+        "item-f653b3ff",
+        "android-api-client"
+      ],
+      "tags": [
+        "iOS 开发",
+        "网络请求"
+      ]
+    },
+    {
+      "id": "ios-userdefaults-files",
+      "title": "UserDefaults、@AppStorage 与文件系统",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-state-binding"
+      ],
+      "related": [
+        "android-datastore"
+      ],
+      "tags": [
+        "iOS 开发",
+        "本地存储与同步"
+      ]
+    },
+    {
+      "id": "ios-swiftdata",
+      "title": "SwiftData：@Model、ModelContainer 与 @Query",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-observation"
+      ],
+      "related": [
+        "android-room"
+      ],
+      "tags": [
+        "iOS 开发",
+        "本地存储与同步"
+      ]
+    },
+    {
+      "id": "ios-keychain",
+      "title": "Keychain：安全保存 Token 与凭据",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-userdefaults-files"
+      ],
+      "related": [
+        "android-secure-storage"
+      ],
+      "tags": [
+        "iOS 开发",
+        "本地存储与同步"
+      ]
+    },
+    {
+      "id": "ios-cloudkit",
+      "title": "iCloud 与 CloudKit 同步基础",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftdata"
+      ],
+      "related": [
+        "android-offline-first"
+      ],
+      "tags": [
+        "iOS 开发",
+        "本地存储与同步"
+      ]
+    },
+    {
+      "id": "ios-architecture-di",
+      "title": "App 架构：分层与依赖注入",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-state-architecture",
+        "ios-swift-protocols"
+      ],
+      "related": [
+        "android-arch-layers",
+        "android-hilt"
+      ],
+      "tags": [
+        "iOS 开发",
+        "架构、测试与性能"
+      ]
+    },
+    {
+      "id": "ios-spm-modules",
+      "title": "Swift Package：依赖管理与本地模块拆分",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-xcode-project",
+        "ios-architecture-di"
+      ],
+      "related": [
+        "android-modularization",
+        "android-kmp"
+      ],
+      "tags": [
+        "iOS 开发",
+        "架构、测试与性能"
+      ]
+    },
+    {
+      "id": "ios-swift-testing",
+      "title": "单元测试：Swift Testing 与 XCTest",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-architecture-di"
+      ],
+      "related": [
+        "android-unit-testing"
+      ],
+      "tags": [
+        "iOS 开发",
+        "架构、测试与性能"
+      ]
+    },
+    {
+      "id": "ios-ui-testing-previews",
+      "title": "UI 测试与 Preview 驱动开发",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-testing"
+      ],
+      "related": [
+        "android-compose-ui-testing"
+      ],
+      "tags": [
+        "iOS 开发",
+        "架构、测试与性能"
+      ]
+    },
+    {
+      "id": "ios-instruments",
+      "title": "调试与性能：Instruments、内存泄漏与卡顿",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swift-arc",
+        "ios-simulator-device"
+      ],
+      "related": [
+        "android-debug-profiler"
+      ],
+      "tags": [
+        "iOS 开发",
+        "架构、测试与性能"
+      ]
+    },
+    {
+      "id": "ios-ai-code-review",
+      "title": "审查 AI 生成的 Swift 代码：并发、内存与隐私",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-ai-verify-loop",
+        "ios-sendable-swift6",
+        "ios-swift-arc"
+      ],
+      "related": [
+        "android-ai-code-review"
+      ],
+      "tags": [
+        "iOS 开发",
+        "架构、测试与性能"
+      ]
+    },
+    {
+      "id": "ios-permissions-privacy",
+      "title": "权限申请、用途说明与隐私清单",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-app-lifecycle"
+      ],
+      "related": [
+        "android-permissions"
+      ],
+      "tags": [
+        "iOS 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "ios-notifications",
+      "title": "本地通知与 APNs 远程推送",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-permissions-privacy"
+      ],
+      "related": [
+        "android-notifications-fcm"
+      ],
+      "tags": [
+        "iOS 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "ios-background-tasks",
+      "title": "后台任务与后台刷新",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-app-lifecycle",
+        "ios-async-await"
+      ],
+      "related": [
+        "android-workmanager"
+      ],
+      "tags": [
+        "iOS 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "ios-camera-photos-location",
+      "title": "相机、相册、定位与地图",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-permissions-privacy"
+      ],
+      "related": [
+        "android-camera-media-location"
+      ],
+      "tags": [
+        "iOS 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "ios-widgets-intents",
+      "title": "小组件、Live Activity 与 App Intents",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-app-lifecycle",
+        "ios-swiftdata"
+      ],
+      "related": [
+        "android-widgets-shortcuts"
+      ],
+      "tags": [
+        "iOS 开发",
+        "系统能力集成"
+      ]
+    },
+    {
+      "id": "ios-cloud-llm",
+      "title": "调用云端大模型：后端代理、流式输出与密钥安全",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-api-client",
+        "ios-async-sequence",
+        "ios-keychain"
+      ],
+      "related": [
+        "item-6711f6d9",
+        "ai-7ed4bed9",
+        "android-cloud-llm"
+      ],
+      "tags": [
+        "iOS 开发",
+        "在 App 中集成 AI"
+      ]
+    },
+    {
+      "id": "ios-on-device-ai",
+      "title": "端侧 AI：Foundation Models、Core ML 与 Vision",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-async-sequence"
+      ],
+      "related": [
+        "ai-7ed4bed9",
+        "android-on-device-ai"
+      ],
+      "tags": [
+        "iOS 开发",
+        "在 App 中集成 AI"
+      ]
+    },
+    {
+      "id": "ios-ai-structured-tools",
+      "title": "AI 结构化输出与工具调用：@Generable 与 Tool",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-on-device-ai",
+        "ios-codable"
+      ],
+      "related": [
+        "schema-1afe35e1",
+        "tool-calling-0d851dd7",
+        "android-ai-structured-tools"
+      ],
+      "tags": [
+        "iOS 开发",
+        "在 App 中集成 AI"
+      ]
+    },
+    {
+      "id": "ios-testflight-asc",
+      "title": "App Store Connect 与 TestFlight 测试分发",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-signing"
+      ],
+      "related": [
+        "android-play-console"
+      ],
+      "tags": [
+        "iOS 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "ios-app-review",
+      "title": "App 审核指南、隐私标签与常见被拒原因",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-permissions-privacy",
+        "ios-testflight-asc"
+      ],
+      "related": [
+        "android-play-console"
+      ],
+      "tags": [
+        "iOS 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "ios-storekit",
+      "title": "应用内购买与订阅：StoreKit 2",
+      "minutes": 60,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-async-await",
+        "ios-testflight-asc"
+      ],
+      "related": [
+        "android-play-billing"
+      ],
+      "tags": [
+        "iOS 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "ios-crash-metrics",
+      "title": "崩溃报告、性能指标与线上监控",
+      "minutes": 30,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-testflight-asc"
+      ],
+      "related": [
+        "android-crash-vitals"
+      ],
+      "tags": [
+        "iOS 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "ios-ci-cd",
+      "title": "持续集成与自动发布：Xcode Cloud 与 fastlane",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-testflight-asc",
+        "ios-swift-testing"
+      ],
+      "related": [
+        "item-524b1b2c",
+        "android-ci-cd"
+      ],
+      "tags": [
+        "iOS 开发",
+        "发布与商业化"
+      ]
+    },
+    {
+      "id": "ios-multiplatform",
+      "title": "多设备适配：iPad、Mac 与 Apple Watch",
+      "minutes": 45,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-swiftui-layout",
+        "ios-navigation-stack"
+      ],
+      "related": [
+        "android-edge-to-edge-adaptive"
+      ],
+      "tags": [
+        "iOS 开发",
+        "扩展与综合实践"
+      ]
+    },
+    {
+      "id": "ios-capstone",
+      "title": "综合实践：用 AI 协作从需求到上架一个 App",
+      "minutes": 90,
+      "updated": "2026-11-21T03:04:39.213Z",
+      "prerequisites": [
+        "ios-ai-code-review",
+        "ios-app-review",
+        "ios-ci-cd"
+      ],
+      "related": [
+        "android-capstone"
+      ],
+      "tags": [
+        "iOS 开发",
+        "扩展与综合实践"
+      ]
+    }
+  ]
+}

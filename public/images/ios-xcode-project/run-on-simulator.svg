@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="370" viewBox="0 0 680 370" role="img">
+<title>在 Xcode 中选择 iPhone 模拟器并运行</title>
+<desc>Xcode 窗口顶部工具栏示意：1 点中间的设备名打开目标设备列表；Any iOS Device 只能构建不能运行；2 在 iOS Simulators 下选一个 iPhone；3 点左上角三角形运行按钮或按 Command R；4 模拟器里出现地球图标和 Hello, world!</desc><style>svg{--t:#73726C;--b:#D3D1C7;--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}.t{font-size:14px;fill:#1F1E1D}.ts{font-size:12px;fill:#5F5E5A}.th{font-size:14px;font-weight:500;fill:#1F1E1D}.box{fill:#F5F4EF;stroke:#B4B2A9}.arr{stroke:#73726C;stroke-width:1.5;fill:none}.leader{stroke:#888780;stroke-width:0.5;stroke-dasharray:3 3;fill:none}.c-gray>rect,.c-gray>circle,.c-gray>ellipse,rect.c-gray,circle.c-gray,ellipse.c-gray{fill:#F1EFE8;stroke:#5F5E5A}.c-gray>.t,.c-gray>.th{fill:#444441}.c-gray>.ts{fill:#5F5E5A}.c-teal>rect,.c-teal>circle,.c-teal>ellipse,rect.c-teal,circle.c-teal,ellipse.c-teal{fill:#E1F5EE;stroke:#0F6E56}.c-teal>.t,.c-teal>.th{fill:#085041}.c-teal>.ts{fill:#0F6E56}.c-purple>rect,.c-purple>circle,.c-purple>ellipse,rect.c-purple,circle.c-purple,ellipse.c-purple{fill:#EEEDFE;stroke:#534AB7}.c-purple>.t,.c-purple>.th{fill:#3C3489}.c-purple>.ts{fill:#534AB7}.c-amber>rect,.c-amber>circle,.c-amber>ellipse,rect.c-amber,circle.c-amber,ellipse.c-amber{fill:#FAEEDA;stroke:#854F0B}.c-amber>.t,.c-amber>.th{fill:#633806}.c-amber>.ts{fill:#854F0B}.c-green>rect,.c-green>circle,.c-green>ellipse,rect.c-green,circle.c-green,ellipse.c-green{fill:#EAF3DE;stroke:#3B6D11}.c-green>.t,.c-green>.th{fill:#27500A}.c-green>.ts{fill:#3B6D11}.c-blue>rect,.c-blue>circle,.c-blue>ellipse,rect.c-blue,circle.c-blue,ellipse.c-blue{fill:#E6F1FB;stroke:#185FA5}.c-blue>.t,.c-blue>.th{fill:#0C447C}.c-blue>.ts{fill:#185FA5}.c-coral>rect,.c-coral>circle,.c-coral>ellipse,rect.c-coral,circle.c-coral,ellipse.c-coral{fill:#FAECE7;stroke:#993C1D}.c-coral>.t,.c-coral>.th{fill:#712B13}.c-coral>.ts{fill:#993C1D}</style><rect x="0" y="0" width="680" height="370" fill="#FFFFFF"/>
+<rect class="box" x="40" y="80" width="600" height="44" rx="8" stroke-width="0.5"/>
+<circle cx="58" cy="102" r="5" fill="none" stroke="var(--t)" stroke-width="0.5"/>
+<circle cx="74" cy="102" r="5" fill="none" stroke="var(--t)" stroke-width="0.5"/>
+<circle cx="90" cy="102" r="5" fill="none" stroke="var(--t)" stroke-width="0.5"/>
+<rect x="108" y="94" width="18" height="16" rx="3" fill="none" stroke="var(--t)" stroke-width="1"/>
+<line x1="114" y1="94" x2="114" y2="110" stroke="var(--t)" stroke-width="1"/>
+<g class="c-amber">
+<rect x="140" y="90" width="32" height="24" rx="6" stroke-width="1"/>
+</g>
+<polygon points="152,95 152,109 164,102" fill="#BA7517"/>
+<text class="th" x="184" y="96" dominant-baseline="central">AINotes</text>
+<text class="ts" x="184" y="112" dominant-baseline="central">main</text>
+<g class="c-purple">
+<rect x="290" y="90" width="210" height="24" rx="6" stroke-width="1"/>
+<text class="ts" x="395" y="102" text-anchor="middle" dominant-baseline="central">AINotes  ›  iPhone 17 Pro</text>
+</g>
+<rect class="box" x="510" y="90" width="120" height="24" rx="6" stroke-width="0.5"/>
+<text class="ts" x="570" y="102" text-anchor="middle" dominant-baseline="central">AINotes: Ready</text>
+<rect class="box" x="290" y="132" width="210" height="162" rx="8" stroke-width="0.5"/>
+<text class="ts" x="304" y="150" dominant-baseline="central">iOS Device</text>
+<text class="t" x="304" y="172" dominant-baseline="central">Any iOS Device (arm64)</text>
+<line x1="298" y1="188" x2="492" y2="188" stroke="var(--b)" stroke-width="0.5"/>
+<text class="ts" x="304" y="204" dominant-baseline="central">iOS Simulators</text>
+<g class="c-purple">
+<rect x="298" y="216" width="194" height="26" rx="4" stroke-width="0.5"/>
+<text class="th" x="310" y="229" dominant-baseline="central">iPhone 17 Pro</text>
+</g>
+<text class="t" x="310" y="258" dominant-baseline="central">iPhone 17</text>
+<text class="t" x="310" y="280" dominant-baseline="central">iPad Air</text>
+<text class="th" x="40" y="50" dominant-baseline="central">3  点 ▶ 运行（快捷键 ⌘R）</text>
+<line class="leader" x1="156" y1="64" x2="156" y2="88"/>
+<text class="th" x="40" y="144" dominant-baseline="central">1  点设备名，打开列表</text>
+<line class="leader" x1="210" y1="140" x2="300" y2="116"/>
+<circle cx="300" cy="116" r="2" fill="var(--t)"/>
+<text class="ts" x="40" y="172" dominant-baseline="central">只能构建，不能运行</text>
+<line class="leader" x1="158" y1="172" x2="288" y2="172"/>
+<text class="th" x="40" y="229" dominant-baseline="central">2  选一个 iPhone 模拟器</text>
+<line class="leader" x1="222" y1="229" x2="288" y2="229"/>
+<text class="th" x="585" y="150" text-anchor="middle" dominant-baseline="central">4  看到这个画面</text>
+<rect class="box" x="530" y="168" width="110" height="170" rx="16" stroke-width="0.5"/>
+<rect x="565" y="176" width="40" height="8" rx="4" fill="none" stroke="var(--t)" stroke-width="0.5"/>
+<circle cx="585" cy="240" r="13" fill="none" stroke="var(--t)" stroke-width="1"/>
+<ellipse cx="585" cy="240" rx="6" ry="13" fill="none" stroke="var(--t)" stroke-width="0.5"/>
+<line x1="572" y1="240" x2="598" y2="240" stroke="var(--t)" stroke-width="0.5"/>
+<text class="ts" x="585" y="268" text-anchor="middle" dominant-baseline="central">Hello, world!</text>
+<text x="672" y="362" text-anchor="end" style="font-size:11px;fill:#888780">示意图</text></svg>

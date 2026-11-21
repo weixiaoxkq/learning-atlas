@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="396" viewBox="0 0 680 396" role="img">
+<title>四层验证像四层筛子</title>
+<desc>AI 的一次修改带着若干问题往下掉。第一层构建 xcodebuild build 拦住拼写、类型、语法错误；第二层单元测试 xcodebuild test 拦住逻辑算错；第三层截图或 UI 测试拦住界面没显示、布局乱；第四层人工看和真机试拦住手感、性能和硬件问题。每层都拦不住所有问题，没跑的层要写进未验证清单。</desc><style>svg{--t:#73726C;--b:#D3D1C7;--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}.t{font-size:14px;fill:#1F1E1D}.ts{font-size:12px;fill:#5F5E5A}.th{font-size:14px;font-weight:500;fill:#1F1E1D}.box{fill:#F5F4EF;stroke:#B4B2A9}.arr{stroke:#73726C;stroke-width:1.5;fill:none}.leader{stroke:#888780;stroke-width:0.5;stroke-dasharray:3 3;fill:none}.c-gray>rect,.c-gray>circle,.c-gray>ellipse,rect.c-gray,circle.c-gray,ellipse.c-gray{fill:#F1EFE8;stroke:#5F5E5A}.c-gray>.t,.c-gray>.th{fill:#444441}.c-gray>.ts{fill:#5F5E5A}.c-teal>rect,.c-teal>circle,.c-teal>ellipse,rect.c-teal,circle.c-teal,ellipse.c-teal{fill:#E1F5EE;stroke:#0F6E56}.c-teal>.t,.c-teal>.th{fill:#085041}.c-teal>.ts{fill:#0F6E56}.c-purple>rect,.c-purple>circle,.c-purple>ellipse,rect.c-purple,circle.c-purple,ellipse.c-purple{fill:#EEEDFE;stroke:#534AB7}.c-purple>.t,.c-purple>.th{fill:#3C3489}.c-purple>.ts{fill:#534AB7}.c-amber>rect,.c-amber>circle,.c-amber>ellipse,rect.c-amber,circle.c-amber,ellipse.c-amber{fill:#FAEEDA;stroke:#854F0B}.c-amber>.t,.c-amber>.th{fill:#633806}.c-amber>.ts{fill:#854F0B}.c-green>rect,.c-green>circle,.c-green>ellipse,rect.c-green,circle.c-green,ellipse.c-green{fill:#EAF3DE;stroke:#3B6D11}.c-green>.t,.c-green>.th{fill:#27500A}.c-green>.ts{fill:#3B6D11}.c-blue>rect,.c-blue>circle,.c-blue>ellipse,rect.c-blue,circle.c-blue,ellipse.c-blue{fill:#E6F1FB;stroke:#185FA5}.c-blue>.t,.c-blue>.th{fill:#0C447C}.c-blue>.ts{fill:#185FA5}.c-coral>rect,.c-coral>circle,.c-coral>ellipse,rect.c-coral,circle.c-coral,ellipse.c-coral{fill:#FAECE7;stroke:#993C1D}.c-coral>.t,.c-coral>.th{fill:#712B13}.c-coral>.ts{fill:#993C1D}</style><rect x="0" y="0" width="680" height="396" fill="#FFFFFF"/>
+<g class="c-gray">
+<rect x="130" y="24" width="200" height="36" rx="8" stroke-width="0.5"/>
+<text class="th" x="230" y="42" text-anchor="middle" dominant-baseline="central">AI 的一次修改</text>
+</g>
+<circle class="c-coral" cx="120" cy="84" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="190" cy="92" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="250" cy="80" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="310" cy="94" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="365" cy="84" r="6" stroke-width="0.5"/>
+<line x1="60" y1="120" x2="400" y2="120" stroke="#888780" stroke-width="3" stroke-dasharray="10 6"/>
+<circle class="c-coral" cx="100" cy="111" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="140" cy="111" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="300" cy="111" r="6" stroke-width="0.5"/>
+<text class="th" x="420" y="112" dominant-baseline="central">构建 xcodebuild build</text>
+<text class="ts" x="420" y="132" dominant-baseline="central">拦住：拼写、类型、语法错误</text>
+<circle class="c-coral" cx="200" cy="152" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="260" cy="164" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="340" cy="156" r="6" stroke-width="0.5"/>
+<line x1="60" y1="190" x2="400" y2="190" stroke="#888780" stroke-width="3" stroke-dasharray="10 6"/>
+<circle class="c-coral" cx="200" cy="181" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="260" cy="181" r="6" stroke-width="0.5"/>
+<text class="th" x="420" y="182" dominant-baseline="central">单元测试 xcodebuild test</text>
+<text class="ts" x="420" y="202" dominant-baseline="central">拦住：逻辑算错</text>
+<circle class="c-coral" cx="150" cy="222" r="6" stroke-width="0.5"/>
+<circle class="c-coral" cx="330" cy="232" r="6" stroke-width="0.5"/>
+<line x1="60" y1="260" x2="400" y2="260" stroke="#888780" stroke-width="3" stroke-dasharray="10 6"/>
+<circle class="c-coral" cx="150" cy="251" r="6" stroke-width="0.5"/>
+<text class="th" x="420" y="252" dominant-baseline="central">截图 / UI 测试</text>
+<text class="ts" x="420" y="272" dominant-baseline="central">拦住：界面没显示、布局乱</text>
+<circle class="c-coral" cx="330" cy="294" r="6" stroke-width="0.5"/>
+<line x1="60" y1="330" x2="400" y2="330" stroke="#888780" stroke-width="3" stroke-dasharray="10 6"/>
+<circle class="c-coral" cx="330" cy="321" r="6" stroke-width="0.5"/>
+<text class="th" x="420" y="322" dominant-baseline="central">人工看、真机试</text>
+<text class="ts" x="420" y="342" dominant-baseline="central">拦住：手感、性能、硬件</text>
+<text class="ts" x="230" y="372" text-anchor="middle" dominant-baseline="central">每层都有漏网的 → 没跑的层要写进「未验证」</text>
+<text x="672" y="388" text-anchor="end" style="font-size:11px;fill:#888780">示意图</text></svg>

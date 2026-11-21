@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="384" viewBox="0 0 680 384" role="img">
+<title>Xcode 断点调试界面</title>
+<desc>1 在代码第 12 行的行号上点一下设置蓝色断点，程序运行到这里暂停，该行绿色高亮并显示 Thread 1: breakpoint 1.1；2 调试栏的四个按钮：继续 Control Command Y，跳过一行 F6，进入函数 F7，跳出函数 F8；3 左下变量视图显示 text 等于 你好世界，parts 只有 1 个元素；4 右下 LLDB 控制台输入 po parts 输出 1 element，po text.count 输出 4。</desc><style>svg{--t:#73726C;--b:#D3D1C7;--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}.t{font-size:14px;fill:#1F1E1D}.ts{font-size:12px;fill:#5F5E5A}.th{font-size:14px;font-weight:500;fill:#1F1E1D}.box{fill:#F5F4EF;stroke:#B4B2A9}.arr{stroke:#73726C;stroke-width:1.5;fill:none}.leader{stroke:#888780;stroke-width:0.5;stroke-dasharray:3 3;fill:none}.c-gray>rect,.c-gray>circle,.c-gray>ellipse,rect.c-gray,circle.c-gray,ellipse.c-gray{fill:#F1EFE8;stroke:#5F5E5A}.c-gray>.t,.c-gray>.th{fill:#444441}.c-gray>.ts{fill:#5F5E5A}.c-teal>rect,.c-teal>circle,.c-teal>ellipse,rect.c-teal,circle.c-teal,ellipse.c-teal{fill:#E1F5EE;stroke:#0F6E56}.c-teal>.t,.c-teal>.th{fill:#085041}.c-teal>.ts{fill:#0F6E56}.c-purple>rect,.c-purple>circle,.c-purple>ellipse,rect.c-purple,circle.c-purple,ellipse.c-purple{fill:#EEEDFE;stroke:#534AB7}.c-purple>.t,.c-purple>.th{fill:#3C3489}.c-purple>.ts{fill:#534AB7}.c-amber>rect,.c-amber>circle,.c-amber>ellipse,rect.c-amber,circle.c-amber,ellipse.c-amber{fill:#FAEEDA;stroke:#854F0B}.c-amber>.t,.c-amber>.th{fill:#633806}.c-amber>.ts{fill:#854F0B}.c-green>rect,.c-green>circle,.c-green>ellipse,rect.c-green,circle.c-green,ellipse.c-green{fill:#EAF3DE;stroke:#3B6D11}.c-green>.t,.c-green>.th{fill:#27500A}.c-green>.ts{fill:#3B6D11}.c-blue>rect,.c-blue>circle,.c-blue>ellipse,rect.c-blue,circle.c-blue,ellipse.c-blue{fill:#E6F1FB;stroke:#185FA5}.c-blue>.t,.c-blue>.th{fill:#0C447C}.c-blue>.ts{fill:#185FA5}.c-coral>rect,.c-coral>circle,.c-coral>ellipse,rect.c-coral,circle.c-coral,ellipse.c-coral{fill:#FAECE7;stroke:#993C1D}.c-coral>.t,.c-coral>.th{fill:#712B13}.c-coral>.ts{fill:#993C1D}</style><rect x="0" y="0" width="680" height="384" fill="#FFFFFF"/>
+<rect class="box" x="62" y="30" width="578" height="126" rx="8" stroke-width="0.5"/>
+<text class="ts" x="91" y="52" text-anchor="middle" dominant-baseline="central">10</text>
+<text class="t" x="124" y="52" dominant-baseline="central" style="font-family: var(--font-mono)">func characterCount(_ text: String) -&gt; Int {</text>
+<text class="ts" x="91" y="78" text-anchor="middle" dominant-baseline="central">11</text>
+<text class="t" x="144" y="78" dominant-baseline="central" style="font-family: var(--font-mono)">let parts = text.split(separator: " ")</text>
+<g class="c-green">
+<rect x="112" y="92" width="520" height="24" rx="4" stroke-width="0.5"/>
+<text class="t" x="144" y="104" dominant-baseline="central" style="font-family: var(--font-mono)">return parts.count</text>
+<text class="ts" x="624" y="104" text-anchor="end" dominant-baseline="central">Thread 1: breakpoint 1.1</text>
+</g>
+<g class="c-blue">
+<rect x="74" y="93" width="34" height="22" rx="3" stroke-width="0.5"/>
+<text class="th" x="91" y="104" text-anchor="middle" dominant-baseline="central">12</text>
+</g>
+<text class="ts" x="91" y="130" text-anchor="middle" dominant-baseline="central">13</text>
+<text class="t" x="124" y="130" dominant-baseline="central" style="font-family: var(--font-mono)">}</text>
+<rect class="box" x="62" y="168" width="134" height="32" rx="6" stroke-width="0.5"/>
+<text class="t" x="129" y="184" text-anchor="middle" dominant-baseline="central">继续  ⌃⌘Y</text>
+<rect class="box" x="210" y="168" width="134" height="32" rx="6" stroke-width="0.5"/>
+<text class="t" x="277" y="184" text-anchor="middle" dominant-baseline="central">跳过一行  F6</text>
+<rect class="box" x="358" y="168" width="134" height="32" rx="6" stroke-width="0.5"/>
+<text class="t" x="425" y="184" text-anchor="middle" dominant-baseline="central">进入函数  F7</text>
+<rect class="box" x="506" y="168" width="134" height="32" rx="6" stroke-width="0.5"/>
+<text class="t" x="573" y="184" text-anchor="middle" dominant-baseline="central">跳出函数  F8</text>
+<rect class="box" x="62" y="212" width="260" height="124" rx="8" stroke-width="0.5"/>
+<text class="t" x="76" y="236" dominant-baseline="central" style="font-family: var(--font-mono)">text = "你好世界"</text>
+<text class="t" x="76" y="262" dominant-baseline="central" style="font-family: var(--font-mono)">parts = 1 value</text>
+<text class="t" x="96" y="288" dominant-baseline="central" style="font-family: var(--font-mono)">[0] = "你好世界"</text>
+<rect class="box" x="336" y="212" width="304" height="124" rx="8" stroke-width="0.5"/>
+<text class="ts" x="350" y="232" dominant-baseline="central" style="font-family: var(--font-mono)">(lldb) po parts</text>
+<text class="t" x="350" y="254" dominant-baseline="central" style="font-family: var(--font-mono)">▿ 1 element</text>
+<text class="t" x="366" y="276" dominant-baseline="central" style="font-family: var(--font-mono)">- 0 : "你好世界"</text>
+<text class="ts" x="350" y="298" dominant-baseline="central" style="font-family: var(--font-mono)">(lldb) po text.count</text>
+<text class="t" x="350" y="320" dominant-baseline="central" style="font-family: var(--font-mono)">4</text>
+<g class="c-gray"><circle cx="46" cy="104" r="9" stroke-width="0.5"/><text class="th" x="46" y="104" text-anchor="middle" dominant-baseline="central">1</text></g>
+<g class="c-gray"><circle cx="46" cy="184" r="9" stroke-width="0.5"/><text class="th" x="46" y="184" text-anchor="middle" dominant-baseline="central">2</text></g>
+<g class="c-gray"><circle cx="46" cy="274" r="9" stroke-width="0.5"/><text class="th" x="46" y="274" text-anchor="middle" dominant-baseline="central">3</text></g>
+<g class="c-gray"><circle cx="632" cy="212" r="9" stroke-width="0.5"/><text class="th" x="632" y="212" text-anchor="middle" dominant-baseline="central">4</text></g>
+<text class="ts" x="340" y="360" text-anchor="middle" dominant-baseline="central">1 点行号设断点　2 单步控制　3 变量视图　4 LLDB 控制台</text>
+<text x="672" y="376" text-anchor="end" style="font-size:11px;fill:#888780">示意图</text></svg>

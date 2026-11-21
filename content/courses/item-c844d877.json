@@ -7,7 +7,7 @@
   "mode": "collection",
   "demo": false,
   "created": "2026-10-20T14:41:38.841Z",
-  "updated": "2026-11-14T15:24:47.055Z",
+  "updated": "2026-11-21T02:49:41.378Z",
   "tags": [],
   "modules": [
     {
@@ -25,7 +25,12 @@
         "item-dbfb1a55",
         "item-38f6d1b5",
         "item-b26e2a6a",
-        "item-d0046ec9"
+        "item-d0046ec9",
+        "item-f576f528",
+        "item-98540666",
+        "item-18359143",
+        "item-2a5ddb5d",
+        "item-e24f8244"
       ],
       "children": []
     },
@@ -53,7 +58,8 @@
         "item-7e906eb4",
         "item-131ed937",
         "item-8543033c",
-        "item-e66e046c"
+        "item-e66e046c",
+        "item-d43bf5cd"
       ],
       "children": []
     },
@@ -169,6 +175,51 @@
       "title": "だ的接续：为什么有时保留、有时不用",
       "minutes": 30,
       "updated": "2026-11-14T14:59:36.887Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-f576f528",
+      "title": "として：身份、用途、评价角度与常见变体",
+      "minutes": 30,
+      "updated": "2026-11-21T02:49:41.378Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-98540666",
+      "title": "ではあります・である・です：文体、礼貌与对比语感",
+      "minutes": 30,
+      "updated": "2026-11-21T02:49:41.378Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-18359143",
+      "title": "変更になる：结果表达与変更する、変更される的区别",
+      "minutes": 30,
+      "updated": "2026-11-21T02:49:41.378Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-2a5ddb5d",
+      "title": "だったら的前接：名词、形容词、动词与んだったら",
+      "minutes": 30,
+      "updated": "2026-11-21T02:49:41.378Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-e24f8244",
+      "title": "らしい：传闻推断、典型样子与ようだ・そうだ的区别",
+      "minutes": 30,
+      "updated": "2026-11-21T02:49:41.378Z",
       "prerequisites": [],
       "related": [],
       "tags": []
@@ -295,6 +346,15 @@
       "title": "のであれば与としたら：前提与假设的语感",
       "minutes": 30,
       "updated": "2026-11-14T15:24:47.055Z",
+      "prerequisites": [],
+      "related": [],
+      "tags": []
+    },
+    {
+      "id": "item-d43bf5cd",
+      "title": "どういうこと 与 どういう意味：问情况还是问含义",
+      "minutes": 30,
+      "updated": "2026-11-21T02:49:41.378Z",
       "prerequisites": [],
       "related": [],
       "tags": []

@@ -96,8 +96,8 @@
     }
   },
   "item-c844d877": {
-    "current": "item-e66e046c",
-    "lastStudied": "2026-11-14T15:02:01.214Z",
+    "current": "item-e24f8244",
+    "lastStudied": "2026-11-21T02:48:31.887Z",
     "topics": {
       "item-8b01169a": {
         "status": "learning",
@@ -202,6 +202,30 @@
       "item-e66e046c": {
         "status": "learning",
         "updated": "2026-11-14T15:02:01.214Z"
+      },
+      "item-f576f528": {
+        "status": "learning",
+        "updated": "2026-11-21T02:48:31.887Z"
+      },
+      "item-98540666": {
+        "status": "learning",
+        "updated": "2026-11-21T02:48:31.887Z"
+      },
+      "item-18359143": {
+        "status": "learning",
+        "updated": "2026-11-21T02:48:31.887Z"
+      },
+      "item-d43bf5cd": {
+        "status": "learning",
+        "updated": "2026-11-21T02:48:31.887Z"
+      },
+      "item-2a5ddb5d": {
+        "status": "learning",
+        "updated": "2026-11-21T02:48:31.887Z"
+      },
+      "item-e24f8244": {
+        "status": "learning",
+        "updated": "2026-11-21T02:48:31.887Z"
       }
     }
   },
@@ -304,6 +328,526 @@
       "item-04cb739d": {
         "status": "not_started",
         "updated": "2026-11-15T16:20:16.678Z"
+      }
+    }
+  },
+  "ios-857a90e7": {
+    "current": "ios-ai-verify-loop",
+    "lastStudied": "2026-11-21T11:16:58.097Z",
+    "topics": {
+      "ios-xcode-project": {
+        "status": "learning",
+        "updated": "2026-11-21T11:16:58.097Z"
+      },
+      "ios-simulator-device": {
+        "status": "learning",
+        "updated": "2026-11-21T11:16:58.097Z"
+      },
+      "ios-signing": {
+        "status": "learning",
+        "updated": "2026-11-21T11:16:58.097Z"
+      },
+      "ios-ai-agent-setup": {
+        "status": "learning",
+        "updated": "2026-11-21T11:16:58.097Z"
+      },
+      "ios-ai-verify-loop": {
+        "status": "learning",
+        "updated": "2026-11-21T11:16:58.097Z"
+      },
+      "ios-swift-values-optionals": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-collections-control": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-functions-closures": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-struct-class-enum": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-errors": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-protocols": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-generics": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-arc": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-wrappers-macros": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-async-await": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-actors": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-sendable-swift6": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-async-sequence": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swiftui-view": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swiftui-layout": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swiftui-list-form": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swiftui-resources": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-hig-accessibility": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-state-binding": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-observation": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-view-lifecycle": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-state-architecture": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-navigation-stack": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-modal-tab": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-app-lifecycle": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-deep-links": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-animation": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-custom-layout-canvas": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-uikit-interop": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-urlsession": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-codable": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-api-client": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-userdefaults-files": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swiftdata": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-keychain": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-cloudkit": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-architecture-di": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-spm-modules": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-swift-testing": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-ui-testing-previews": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-instruments": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-ai-code-review": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-permissions-privacy": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-notifications": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-background-tasks": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-camera-photos-location": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-widgets-intents": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-cloud-llm": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-on-device-ai": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-ai-structured-tools": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-testflight-asc": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-app-review": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-storekit": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-crash-metrics": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-ci-cd": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-multiplatform": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "ios-capstone": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      }
+    }
+  },
+  "android-1c7a0890": {
+    "current": null,
+    "lastStudied": null,
+    "topics": {
+      "android-studio-project": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-gradle": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-emulator-adb": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-sdk-versions": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-ai-agent-setup": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-ai-verify-loop": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-null-safety": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-functions-lambdas": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-classes": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-collections": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-extensions-scope": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-errors": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-generics": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-delegation": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kotlin-dsl": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-coroutine-basics": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-structured-concurrency": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-flow": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-stateflow": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-components": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-activity-lifecycle": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-intents-tasks": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-resources-i18n": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-compose-intro": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-compose-layout": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-compose-lazy": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-material3": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-edge-to-edge-adaptive": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-compose-state": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-compose-effects": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-compose-performance": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-compose-animation": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-view-interop": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-arch-layers": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-viewmodel-udf": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-hilt": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-navigation": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-modularization": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-retrofit-okhttp": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-serialization": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-api-client": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-datastore": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-room": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-offline-first": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-secure-storage": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-unit-testing": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-compose-ui-testing": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-debug-profiler": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-baseline-r8": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-ai-code-review": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-permissions": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-workmanager": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-notifications-fcm": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-camera-media-location": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-widgets-shortcuts": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-cloud-llm": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-on-device-ai": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-ai-structured-tools": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-release-build": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-play-console": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-play-billing": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-crash-vitals": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-ci-cd": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-kmp": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
+      },
+      "android-capstone": {
+        "status": "not_started",
+        "updated": "2026-11-21T03:04:39.213Z"
       }
     }
   }

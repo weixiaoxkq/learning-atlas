@@ -12,5 +12,12 @@
     "english": "语言学习",
     "symbol": "◇",
     "color": "#587ca4"
+  },
+  {
+    "id": "item-b86e418c",
+    "title": "软件开发",
+    "english": "软件开发",
+    "symbol": "◇",
+    "color": "#587ca4"
   }
 ]
